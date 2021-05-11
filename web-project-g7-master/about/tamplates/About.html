@@ -21,11 +21,11 @@
             <div class="form-popup" id="mySignIn">
                 <form class="form-container">
                     <h2>Login</h2><br>
-                    <label for="full_name"><b>Full Name</b></label>
+                    <label for="full_name" id="full_name"><b>Full Name</b></label>
                     <br>
                     <input type="text" placeholder="Enter Your Username" name="full_name" required>
                     <br>
-                    <label for="password"><b>Password</b></label>
+                    <label for="password" id="password"><b>Password</b></label>
                     <br>
                     <input type="password" placeholder="Enter Your Password" name="password" required>
                     <button type="submit" class="btn sign_in button-signin">SIGN IN</button>
@@ -40,7 +40,8 @@
             </div>
         </div>
         <div class="Cart">
-            <img src="../../general/static/cart.jpg" height="30px" width="30px"></img>
+            <a href="../../cart/templates/Cart.html">
+            <img src="../../general/static/cart.jpg" height="30px" width="30px"></img></a>
         </div>
         <div class="Logo2">
             <img src="../../general/static/logo.jpeg" height="80px" width="80px"></img>
@@ -108,15 +109,15 @@
         <div class="form-popup" id="myContact">
             <form class="form-container">
                 <h2>Contact Us:</h2>
-                <label for="name"><b>Full Name</b></label>
+                <label for="name" id="name"><b>Full Name</b></label>
                 <br>
                 <input type="text" placeholder="Enter Your name" name="name" required>
                 <br>
-                <label for="email"><b>Email</b></label>
+                <label for="email" id="email"><b>Email</b></label>
                 <br>
                 <input type="email" placeholder="Enter Your Email" name="email" required>
                 <br>
-                <label for="massage"><b>What would you like to tell us?</b></label>
+                <label for="massage" id="massage"><b>What would you like to tell us?</b></label>
                 <br>
                 <input type="massage" placeholder="Enter Your Massage" name="massage" required>
                 <button type="submit" class="btn">Send</button>
@@ -131,4 +132,4 @@
         </div>
     </div>
 </footer>
-</html>>
+</html>
