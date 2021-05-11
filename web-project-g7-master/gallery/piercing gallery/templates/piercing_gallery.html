@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Piercing Gallery</title>
+    <meta name="author" content="group 7">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+     <script src="../static/piercing_gallery.js"></script>
+        <script src="../../../homepage/static/HomePage.js"></script>
+    <link rel="stylesheet" href="../../../general/static/Header.css">
+    <link rel="stylesheet" href="../../../appointment/static/Appoitment_popup.css">
+    <link rel="stylesheet" href="../../../general/static/Footer.css">
+      <link rel="stylesheet" href="../static/piercing%20gallery.css">
+
+</head>
+<body>
+<header>
+    <div class="Logo">
+        <div class="Sign-in">
+            <img src="../../../general/static/userLogo.png" onclick="openSignIn()" height="30px" width="30px"></img>
+            <div class="form-popup" id="mySignIn">
+                <form class="form-container">
+                    <h2>Login</h2><br>
+                    <label for="full_name" id="full_name"><b>Full Name</b></label>
+                    <br>
+                    <input type="text" placeholder="Enter Your Username" name="full_name" required>
+                    <br>
+                    <label for="password" id="password"><b>Password</b></label>
+                    <br>
+                    <input type="password" placeholder="Enter Your Password" name="password" required>
+                    <button type="submit" class="btn sign_in button-signin">SIGN IN</button>
+                </form>
+                <h4> You still don't have an account?</h4>
+                <button class="btn sign_up button-signup">
+                    <a href="../../../sign%20up/templates/sign%20up.html">SIGN UP</a>
+                </button>
+                <br>
+                <button class="btn cancel button-cancel" onclick="closeSignIn()">CLOSE</button>
+                <br>
+            </div>
+        </div>
+        <div class="Cart">
+                        <a href="../../../cart/templates/Cart.html">
+            <img src="../../../general/static/cart.jpg" height="30px" width="30px"></img></a>
+        </div>
+        <div class="Logo2">
+            <img src="../../../general/static/logo.jpeg" height="80px" width="80px"></img>
+        </div>
+        <div class="Facebook">
+            <img src="../../../general/static/facebook.png" height="30px" width="30px"></img>
+        </div>
+        <div class="Instagram">
+            <img src="../../../general/static/instagram.png" height="30px" width="30px"></img>
+        </div>
+    </div>
+    <div class="Menu">
+        <a href="../../../homepage/templates/HomePage.html" class="Home">Home</a>
+        <a href="../../../treatment/templates/Treatments.html" class="Treatment">Treatment</a>
+        <a href="../../../gallery/Gallery.html" class="Gallery">Gallery</a>
+        <a href="../../../shop/templates/Shop.html" class="Shop">Shop</a>
+        <a href="../../../user%20personal%20page/templates/User's%20Personal%20Page.html" class="Info">Personal Area</a>
+    </div>
+</header>
+
+<div class="background">
+    <div class="row">
+        <div class="head">
+            <h1 id="top" class="gallery-head">Piercing Gallery</h1>
+        </div>
+    </div>
+    <div class="parts">
+        <a href="#ears">Ears</a>
+        <a href="#Microdermal">Microdermal</a>
+        <a href="../../piercing%20gallery/templates/piercing_gallery2.html">Nose</a>
+        <a href="../../piercing%20gallery/templates/piercing_gallery2.html">Lips</a>
+    </div>
+    <div><h4 class="piercing-heads">Click the arrows to see what you desire</h4></div>
+
+    <div class="row">
+        <h2 id="ears" class="piercing-heads">Ears</h2>
+        <div class="slideshow-container">
+            <div class="mySlides1">
+                <img class="SlideImg" src="../static/piercing_image/epi1.jpg" style="width:50%">
+            </div>
+
+            <div class="mySlides1">
+                <img class="SlideImg" src="../static/piercing_image/epi2.jpg" style="width:50%">
+            </div>
+
+            <div class="mySlides1">
+                <img class="SlideImg" src="../static/piercing_image/epi3.jpg" style="width:50%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+        <br><br>
+        <div class="back_up">
+            <a href="#top">BACK UP</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <h2 id="Microdermal" class="piercing-heads">Microdermal</h2>
+        <div class="slideshow-container">
+            <div class="mySlides2">
+                <img class="SlideImg" src="../static/piercing_image/micro1.jpg" style="width:50%">
+            </div>
+
+            <div class="mySlides2">
+                <img class="SlideImg" src="../static/piercing_image/micro2.jpg" style="width:50%">
+            </div>
+
+            <div class="mySlides2">
+                <img class="SlideImg" src="../static/piercing_image/mic3.jpg" style="width:50%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+        </div>
+        <br><br>
+    </div>
+    <br><br>
+
+    <div class="back_up">
+        <a href="#top">BACK TO THE TOP</a>
+    </div>
+</div>
+</div>
+</body>
+<footer>
+    <div class="Footer">
+        <div class="Contact" onclick="openContactUs()">Contact Us</div>
+        <div class="form-popup" id="myContact">
+            <form class="form-container">
+                <h2>Contact Us:</h2>
+                <label for="name" id="name"><b>Full Name</b></label>
+                <br>
+                <input type="text" placeholder="Enter Your name" name="name" required>
+                <br>
+                <label for="email" id="email"><b>Email</b></label>
+                <br>
+                <input type="email" placeholder="Enter Your Email" name="email" required>
+                <br>
+                <label for="massage" id="massage"><b>What would you like to tell us?</b></label>
+                <br>
+                <input type="massage" placeholder="Enter Your Massage" name="massage" required>
+                <button type="submit" class="btn">Send</button>
+                <br>
+                <button class="btn cancel" onclick="closeContactUs()">Close</button>
+            </form>
+        </div>
+        <div class="Privacy_policy">
+            <a href="../../../Privacy%20Policy/templates/Privacy%20Policy.html">Privacy Policy</a></div>
+        <div class="About">
+            <a href="../../../about/tamplates/About.html">About</a>
+        </div>
+    </div>
+</footer>
+</html>
+
+
