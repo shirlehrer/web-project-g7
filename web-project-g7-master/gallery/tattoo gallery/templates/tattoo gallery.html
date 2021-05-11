@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Dr.Ink - Gallery</title>
+    <meta name="author" content="group 7">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+    <script src="gallery.js"></script>
+        <script src="../../../homepage/static/HomePage.js"></script>
+    <link rel="stylesheet" href="../../../general/static/Header.css">
+    <link rel="stylesheet" href="../../../appointment/static/Appoitment_popup.css">
+    <link rel="stylesheet" href="../../../general/static/Footer.css">
+        <link rel="stylesheet" href="../static/gallery.css">
+
+</head>
+<body>
+<header>
+    <div class="Logo">
+        <div class="Sign-in">
+            <img src="../../../general/static/userLogo.png" onclick="openSignIn()" height="30px" width="30px"></img>
+            <div class="form-popup" id="mySignIn">
+                <form class="form-container">
+                    <h2>Login</h2><br>
+                    <label for="full_name"><b>Full Name</b></label>
+                    <br>
+                    <input type="text" placeholder="Enter Your Username" name="full_name" required>
+                    <br>
+                    <label for="password"><b>Password</b></label>
+                    <br>
+                    <input type="password" placeholder="Enter Your Password" name="password" required>
+                    <button type="submit" class="btn sign_in button-signin">SIGN IN</button>
+                </form>
+                <h4> You still don't have an account?</h4>
+                <button class="btn sign_up button-signup">
+                    <a href="../../../sign%20up/templates/sign%20up.html">SIGN UP</a>
+                </button>
+                <br>
+                <button class="btn cancel button-cancel" onclick="closeSignIn()">CLOSE</button>
+                <br>
+            </div>
+        </div>
+
+        <div class="Cart">
+            <img src="../../../general/static/cart.jpg" height="30px" width="30px"></img>
+        </div>
+        <div class="Logo2">
+            <img src="../../../general/static/logo.jpeg" height="80px" width="80px"></img>
+        </div>
+        <div class="Facebook">
+            <img src="../../../general/static/facebook.png" height="30px" width="30px"></img>
+        </div>
+        <div class="Instagram">
+            <img src="../../../general/static/instagram.png" height="30px" width="30px"></img>
+        </div>
+    </div>
+    <div class="Menu">
+        <a href="../../../homepage/templates/HomePage.html" class="Home">Home</a>
+        <a href="../../../treatment/templates/Treatments.html" class="Treatment">Treatment</a>
+        <a href="../../../gallery/Gallery.html" class="Gallery">Gallery</a>
+        <a href="../../../shop/templates/Shop.html" class="Shop">Shop</a>
+        <a href="../../../user%20personal%20page/templates/User's%20Personal%20Page.html" class="Info">Personal
+            Area</a>
+    </div>
+</header>
+<div class="background">
+    <div class="row">
+        <div class="head">
+            <h1 class="gallery-head">Tattoo Gallery</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="top">
+            <ul>
+                <li><a href="#img_1"><img src="../static/image/tattoo1.jpg"></a></li>
+                <li><a href="#img_2"><img src="../static/image/tattoo2.jpg"></a></li>
+                <li><a href="#img_3"><img src="../static/image/tattoo3.jpg"></a></li>
+                <li><a href="#img_4"><img src="../static/image/tattoo4.jpg"></a></li>
+                <li><a href="#img_5"><img src="../static/image/tattoo5.jpg"></a></li>
+                <li><a href="#img_6"><img src="../static/image/tattoo6.jpg"></a></li>
+                <li><a href="#img_7"><img src="../static/image/tattoo7.jpg"></a></li>
+                <li><a href="#img_8"><img src="../static/image/tattoo8.png"></a></li>
+                <li><a href="#img_9"><img src="../static/image/tattoo9.jpg"></a></li>
+                <li><a href="#img_10"><img src="../static/image/tattoo10.jpeg"></a></li>
+                <li><a href="#img_11"><img src="../static/image/tattoo11.jpg"></a></li>
+                <li><a href="#img_12"><img src="../static/image/tattoo12.jpg"></a></li>
+                <li><a href="#img_13"><img src="../static/image/tattoo13.jpg"></a></li>
+                <li><a href="#img_14"><img src="../static/image/tattoo14.jpg"></a></li>
+                <li><a href="#img_15"><img src="../static/image/tattoo15.jpg"></a></li>
+                <li><a href="#img_16"><img src="../static/image/tattoo16.jpg"></a></li>
+            </ul>
+            <a href="#_1" class="lightbox trans" id="img_1"><img src=../static/image/tattoo1.jpg></a>
+            <a href="#_2" class="lightbox trans" id="img_2"><img src=../static/image/tattoo2.jpg></a>
+            <a href="#_3" class="lightbox trans" id="img_3"><img src=../static/image/tattoo3.jpg></a>
+            <a href="#_4" class="lightbox trans" id="img_4"><img src=../static/image/tattoo4.jpg></a>
+            <a href="#_5" class="lightbox trans" id="img_5"><img src=../static/image/tattoo5.jpg></a>
+            <a href="#_6" class="lightbox trans" id="img_6"><img src=../static/image/tattoo6.jpg></a>
+            <a href="#_7" class="lightbox trans" id="img_7"><img src=../static/image/tattoo7.jpg></a>
+            <a href="#_8" class="lightbox trans" id="img_8"><img src=../static/image/tattoo8.png></a>
+            <a href="#_9" class="lightbox trans" id="img_9"><img src=../static/image/tattoo9.jpg></a>
+            <a href="#_10" class="lightbox trans" id="img_10"><img src="../static/image/tattoo10.jpeg"></a>
+            <a href="#_11" class="lightbox trans" id="img_11"><img src="../static/image/tattoo11.jpg"></a>
+            <a href="#_12" class="lightbox trans" id="img_12"><img src="../static/image/tattoo12.jpg"></a>
+            <a href="#_13" class="lightbox trans" id="img_13"><img src="../static/image/tattoo13.jpg"></a>
+            <a href="#_14" class="lightbox trans" id="img_14"><img src="../static/image/tattoo14.jpg"></a>
+            <a href="#_15" class="lightbox trans" id="img_15"><img src="../static/image/tattoo15.jpg"></a>
+            <a href="#_16" class="lightbox trans" id="img_16"><img src="../static/image/tattoo16.jpg"></a>
+        </div>
+    </div>
+    <br><br><br>
+</div>
+</body>
+<footer>
+    <div class="Footer">
+        <div class="Contact" onclick="openContactUs()">Contact Us</div>
+        <div class="form-popup" id="myContact">
+            <form class="form-container">
+                <h2>Contact Us:</h2>
+                <label for="name"><b>Full Name</b></label>
+                <br>
+                <input type="text" placeholder="Enter Your name" name="name" required>
+                <br>
+                <label for="email"><b>Email</b></label>
+                <br>
+                <input type="email" placeholder="Enter Your Email" name="email" required>
+                <br>
+                <label for="massage"><b>What would you like to tell us?</b></label>
+                <br>
+                <input type="massage" placeholder="Enter Your Massage" name="massage" required>
+                <button type="submit" class="btn">Send</button>
+                <br>
+                <button class="btn cancel" onclick="closeContactUs()">Close</button>
+            </form>
+        </div>
+        <div class="Privacy_policy">
+            <a href="../../../Privacy%20Policy/templates/Privacy%20Policy.html">Privacy Policy</a></div>
+        <div class="About">
+            <a href="../../../about/tamplates/About.html">About</a>
+        </div>
+    </div>
+</footer>
+</html>
+
+

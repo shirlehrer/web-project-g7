@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About </title>
+    <script src=About.js"></script>
+    <link rel="stylesheet" href="../static/About.css">
+    <link rel="stylesheet" href="../../general/static/Header.css">
+    <link rel="stylesheet" href="../../general/static/Footer.css">
+    <link rel="stylesheet" href="../../appointment/static/Appoitment_popup.css">
+    <script src="../../homepage/static/HomePage.js"></script>
+    <script src="../../general/static/contact.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="Logo">
+        <div class="Sign-in">
+            <img src="../../general/static/userLogo.png" onclick="openSignIn()" height="30px" width="30px"></img>
+            <div class="form-popup" id="mySignIn">
+                <form class="form-container">
+                    <h2>Login</h2><br>
+                    <label for="full_name"><b>Full Name</b></label>
+                    <br>
+                    <input type="text" placeholder="Enter Your Username" name="full_name" required>
+                    <br>
+                    <label for="password"><b>Password</b></label>
+                    <br>
+                    <input type="password" placeholder="Enter Your Password" name="password" required>
+                    <button type="submit" class="btn sign_in button-signin">SIGN IN</button>
+                </form>
+                <h4> You still don't have an account?</h4>
+                <button class="btn sign_up button-signup">
+                    <a href="../../sign%20up/templates/sign%20up.html">SIGN UP</a>
+                </button>
+                <br>
+                <button class="btn cancel button-cancel" onclick="closeSignIn()">CLOSE</button>
+                <br>
+            </div>
+        </div>
+        <div class="Cart">
+            <img src="../../general/static/cart.jpg" height="30px" width="30px"></img>
+        </div>
+        <div class="Logo2">
+            <img src="../../general/static/logo.jpeg" height="80px" width="80px"></img>
+        </div>
+        <div class="Facebook">
+            <img src="../../general/static/facebook.png" height="30px" width="30px"></img>
+        </div>
+        <div class="Instagram">
+            <img src="../../general/static/instagram.png" height="30px" width="30px"></img>
+        </div>
+    </div>
+    <div class="Menu">
+        <a href="../../homepage/templates/HomePage.html" class="Home">Home</a>
+        <a href="../../treatment/templates/Treatments.html" class="Treatment">Treatment</a>
+        <a href="../../gallery/Gallery.html" class="Gallery">Gallery</a>
+        <a href="../../shop/templates/Shop.html" class="Shop">Shop</a>
+        <a href="../../user%20personal%20page/templates/User's%20Personal%20Page.html" class="Info">Personal Area</a>
+    </div>
+</header>
+
+<div class="About">
+    <div class="opt2">
+        <img src="../static/aboutPIc.jpg" width="40%;">
+        <p style="font-size:2vw" class="about_text">We are the illustrators.
+                A tattoo is a mark of experience and personal philosophy.<br>
+                We specialise in: Tattooing, Piercing.</p>
+    </div>
+    <div class="OpenHours">
+        <div class="opt3">
+            <img src="../static/schedP.jpg" width="40%;">
+            <div style="font-size:2vw" class="sched_text">Opening Hours :
+                Sunday - Thursday 09:00-16:00<br>
+                Fridays and Holiday eves 09:00-13:00
+            </div>
+        </div>
+    </div>
+    <div class="information">
+        <div class="opt4">
+            <img src="../static/telePic.jpg" width="40%;">
+            <div class="contactInfo_text" style="font-size:2vw">tel : 0544718891
+                Address :
+                Neve Hamzizim 99
+            </div>
+            <div id="googleMap" style="width:100%;height:400px;"></div>
+            <script>
+                function myMap() {
+                    var mapProp = {
+                        center: new google.maps.LatLng(31.249945525890446, 34.789164055643),
+                        zoom: 18,
+                    };
+                    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+                }
+            </script>
+
+            <script src="https://maps.googleapis.com/maps/api/js?AIzaSyCnSQ8lA9ZcvHFmWTcsqk3ZaM59WWZlFKU&callback=myMap"></script>
+
+        </div>
+    </div>
+</div>
+
+</body>
+<footer>
+    <div class="Footer">
+        <div class="Contact" onclick="openContactUs()">Contact Us</div>
+        <div class="form-popup" id="myContact">
+            <form class="form-container">
+                <h2>Contact Us:</h2>
+                <label for="name"><b>Full Name</b></label>
+                <br>
+                <input type="text" placeholder="Enter Your name" name="name" required>
+                <br>
+                <label for="email"><b>Email</b></label>
+                <br>
+                <input type="email" placeholder="Enter Your Email" name="email" required>
+                <br>
+                <label for="massage"><b>What would you like to tell us?</b></label>
+                <br>
+                <input type="massage" placeholder="Enter Your Massage" name="massage" required>
+                <button type="submit" class="btn">Send</button>
+                <br>
+                <button class="btn cancel" onclick="closeContactUs()">Close</button>
+            </form>
+        </div>
+        <div class="Privacy_policy">
+            <a href="../../Privacy%20Policy/templates/Privacy%20Policy.html">Privacy Policy</a></div>
+        <div class="About">
+            <a href="../tamplates/About.html">About</a>
+        </div>
+    </div>
+</footer>
+</html>>

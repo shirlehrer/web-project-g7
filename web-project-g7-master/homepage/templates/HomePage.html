@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../static/Homepage.css">
+    <link rel="stylesheet" href="../../general/static/Header.css">
+    <link rel="stylesheet" href="../../general/static/Footer.css">
+    <link rel="stylesheet" href="../../appointment/static/Appoitment_popup.css">
+    <script src="../static/HomePage.js"></script>
+    <script src="../../general/static/contact.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="Logo">
+        <div class="Sign-in">
+            <img src="../../general/static/userLogo.png" onclick="openSignIn()" height="30px" width="30px"></img>
+            <div class="form-popup" id="mySignIn">
+                <form class="form-container">
+                    <h2>Login</h2><br>
+                    <label for="full_name"><b>Full Name</b></label>
+                    <br>
+                    <input type="text" placeholder="Enter Your Username" name="full_name" required>
+                    <br>
+                    <label for="password"><b>Password</b></label>
+                    <br>
+                    <input type="password" placeholder="Enter Your Password" name="password" required>
+                    <button type="submit" class="btn sign_in button-signin">SIGN IN</button>
+                </form>
+                <h4> You still don't have an account?</h4>
+                <button class="btn sign_up button-signup">
+                    <a href="../../sign%20up/templates/sign%20up.html">SIGN UP</a>
+                </button>
+                <br>
+                <button class="btn cancel button-cancel" onclick="closeSignIn()">CLOSE</button>
+                <br>
+            </div>
+        </div>
+
+        <div class="Cart">
+            <img src="../../general/static/cart.jpg" height="30px" width="30px"></img>
+        </div>
+        <div class="Logo2">
+            <img src="../../general/static/logo.jpeg" height="80px" width="80px"></img>
+        </div>
+        <div class="Facebook">
+            <img src="../../general/static/facebook.png" height="30px" width="30px"></img>
+        </div>
+        <div class="Instagram">
+            <img src="../../general/static/instagram.png" height="30px" width="30px"></img>
+        </div>
+    </div>
+    <div class="Menu">
+        <a href="../templates/HomePage.html" class="Home">Home</a>
+        <a href="../../treatment/templates/Treatments.html" class="Treatment">Treatment</a>
+        <a href="../../gallery/Gallery.html" class="Gallery">Gallery</a>
+        <a href="../../shop/templates/Shop.html" class="Shop">Shop</a>
+        <a href="../../user%20personal%20page/templates/User's%20Personal%20Page.html" class="Info">Personal Area</a>
+    </div>
+</header>
+<div class="homepage_Main">
+    <div class="opt1">
+        <video src="../static/video.mp4" width="100%;" loop autoplay muted>
+            <source src="movie.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="opt2">
+        <img src="../static/appointment.jpg" width="100%;" height="400px;">
+        <div class="appointment_text" onclick="openAppointment()">Schedule an appointment</div>
+        <div class="form-popup" id="myAppointment">
+            <form class="form-container">
+                <h2>Schedule an appointment</h2>
+                <label for="name"><b>Full Name</b></label>
+                <br>
+                <input type="text" placeholder="Enter Your name" name="name" required>
+                <br>
+                <label for="phone"><b>Phone</b></label>
+                <br>
+                <input type="tel" placeholder="Enter Your Phone" name="phone" required>
+                <br>
+                <label for="email"><b>Email</b></label>
+                <br>
+                <input type="email" placeholder="Enter Your Email" name="email" required>
+                <button type="submit" class="btn">Send</button>
+                <br>
+                <button class="btn cancel" onclick="closeAppointment()">Close</button>
+            </form>
+        </div>
+    </div>
+    <div class="opt3">
+        <img src="../static/shop.jpg" width="100%;" height="400px;">
+        <a href="../../shop/templates/Shop.html" class="shop_text">Shop</a>
+    </div>
+    <div class="opt4">
+        <div class="P_Gallery">
+            <img src="../static/piercing_gallery.jpg" width="100%;" height="400px;">
+            <a href="../../gallery/piercing%20gallery/templates/piercing%20gallery.html" class="P_Gallery_text">Piercing
+                Gallery</a>
+        </div>
+        <div class="Gap_Gallery"></div>
+        <div class="T_Gallery">
+            <img src="../static/tattoo_gallery.jpg" width="100%;" height="400px;">
+            <a href="../../gallery/tattoo%20gallery/templates/tattoo%20gallery.html" class="T_Gallery_text">Tattoo
+                Gallery</a>
+        </div>
+    </div>
+</div>
+</body>
+<footer>
+    <div class="Footer">
+        <div class="Contact" onclick="openContactUs()">Contact Us</div>
+        <div class="form-popup" id="myContact">
+            <form class="form-container">
+                <h2>Contact Us:</h2>
+                <label for="name"><b>Full Name</b></label>
+                <br>
+                <input type="text" placeholder="Enter Your name" name="name" required>
+                <br>
+                <label for="email"><b>Email</b></label>
+                <br>
+                <input type="email" placeholder="Enter Your Email" name="email" required>
+                <br>
+                <label for="massage"><b>What would you like to tell us?</b></label>
+                <br>
+                <input type="massage" placeholder="Enter Your Massage" name="massage" required>
+                <button type="submit" class="btn">Send</button>
+                <br>
+                <button class="btn cancel" onclick="closeContactUs()">Close</button>
+            </form>
+        </div>
+        <div class="Privacy_policy">
+            <a href="../../Privacy%20Policy/templates/Privacy%20Policy.html">Privacy Policy</a></div>
+        <div class="About">
+            <a href="../../about/tamplates/About.html">About</a>
+        </div>
+    </div>
+</footer>
+</html>
