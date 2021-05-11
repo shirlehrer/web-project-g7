@@ -83,10 +83,10 @@ main{
 }
 
 .my-products td .options{
-    text-align: right;
+    text-align: left;
     color: white;
     position: relative;
-    right: 30%;
+    left: 15%;
 }
 
 .checki{
@@ -105,7 +105,6 @@ main{
 .my-products td .del{
     width: 20px;
     height: 20px;
-
 }
 
 .del-btn{
@@ -117,7 +116,6 @@ main{
 }
 
 .my-products td a:hover{
-
     font-weight: bolder ;
 }
 
