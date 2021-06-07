@@ -1,7 +1,107 @@
 {% extends 'base.html' %}
+{##}
+{#{% set page_head_title = 'Homepage' %}#}
+{##}
+{#{% block page_body_main_content %}#}
+{#    Welcome!#}
+{#{% endblock %}#}
+{##}
 
-{% set page_head_title = 'Homepage' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../static/Homepage.css">
+    <link rel="stylesheet" href="../../../flaskProject/static/css/Header.css">
+    <link rel="stylesheet" href="../../../flaskProject/static/css/Footer.css">
+    <link rel="stylesheet" href="../../appointment/static/Appoitment_popup.css">
+    <script src="../static/HomePage.js"></script>
+    <script src="../../general/static/contact.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
 
-{% block page_body_main_content %}
-    Welcome!
-{% endblock %}
+</header>
+<div class="homepage_Main">
+    <div class="opt1">
+        <video src="../../../flaskProject/pages/homepage/static/media/video.mp4" width="100%;" loop autoplay muted>
+            <source src="movie.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="opt2">
+        <img src="../../../flaskProject/pages/homepage/static/media/appointment.jpg" width="100%;" height="400px;">
+        <div class="appointment_text" onclick="openAppointment()">Schedule an appointment</div>
+        <div class="form-popup" id="myAppointment">
+            <form class="form-container">
+                <h2>Schedule an appointment</h2>
+                <label for="name"><b>Full Name</b></label>
+                <br>
+                <input type="text" placeholder="Enter Your name" name="name" required>
+                <br>
+                <label for="phone" id="phone"><b>Phone</b></label>
+                <br>
+                <input type="tel" placeholder="Enter Your Phone" name="phone" required>
+                <br>
+                <label for="email"><b>Email</b></label>
+                <br>
+                <input type="email" placeholder="Enter Your Email" name="email" required>
+                <button type="submit" class="btn">Send</button>
+                <br>
+                <button class="btn cancel" onclick="closeAppointment()">Close</button>
+            </form>
+        </div>
+    </div>
+    <div class="opt3">
+        <img src="../../../flaskProject/pages/homepage/static/media/shop.jpg" width="100%;" height="400px;">
+        <a href="../../shop/templates/Shop.html" class="shop_text">Shop</a>
+    </div>
+    <div class="opt4">
+        <div class="P_Gallery">
+            <img src="../../../flaskProject/pages/homepage/static/media/piercing_gallery.jpg" width="100%;" height="400px;">
+            <a href="../../gallery/piercing%20gallery/templates/piercing_gallery.html" class="P_Gallery_text">Piercing
+                Gallery</a>
+        </div>
+        <div class="Gap_Gallery"></div>
+        <div class="T_Gallery">
+            <img src="../../../flaskProject/pages/homepage/static/media/tattoo_gallery.jpg" width="100%;" height="400px;">
+            <a href="../../gallery/tattoo%20gallery/templates/tattoo%20gallery.html" class="T_Gallery_text">Tattoo
+                Gallery</a>
+        </div>
+    </div>
+</div>
+</body>
+<footer>
+    <div class="Footer">
+        <div class="Contact" onclick="openContactUs()">Contact Us</div>
+        <div class="form-popup" id="myContact">
+            <form class="form-container">
+                <h2>Contact Us:</h2>
+                <label for="name" id="name"><b>Full Name</b></label>
+                <br>
+                <input type="text" placeholder="Enter Your name" name="name" required>
+                <br>
+                <label for="email" id="email"><b>Email</b></label>
+                <br>
+                <input type="email" placeholder="Enter Your Email" name="email" required>
+                <br>
+                <label for="massage" id="massage"><b>What would you like to tell us?</b></label>
+                <br>
+                <input type="massage" placeholder="Enter Your Massage" name="massage" required>
+                <button type="submit" class="btn">Send</button>
+                <br>
+                <button class="btn cancel" onclick="closeContactUs()">Close</button>
+            </form>
+        </div>
+        <div class="Privacy_policy">
+            <a href="../../Privacy%20Policy/templates/Privacy%20Policy.html">Privacy Policy</a></div>
+        <div class="About">
+            <a href="../../about/tamplates/About.html">About</a>
+        </div>
+    </div>
+</footer>
+</html>
+

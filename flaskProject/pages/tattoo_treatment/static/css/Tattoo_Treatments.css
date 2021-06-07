@@ -1,0 +1,41 @@
+/*.Tattoo_treatments_page{
+    width:40%;
+    /*margin: auto;
+    text-align: center;
+}*/
+
+.Snake_photo{
+    margin-top: 3px;
+    width: 80%;
+    margin-left: 5%;
+    float: left;
+    opacity: 0.7;
+}
+
+.Treatment_Text{
+    width: 80%;
+    margin: 9%;
+    color: black;
+    font-size: 20px;
+    line-height: 25px;
+    background-color: white;
+    padding: 9%;
+    border-radius: 20%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    margin-bottom: 50px;
+    background-image: url(../../../../static/media/Balg6Fx.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.treatment-head {
+    font-family: 'New Tegomin', serif;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 10px;
+}

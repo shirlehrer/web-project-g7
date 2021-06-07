@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <title>Home Page</title>
     <link rel="stylesheet" href="../static/Homepage.css">
-    <link rel="stylesheet" href="../../general/static/Header.css">
-    <link rel="stylesheet" href="../../general/static/Footer.css">
-    <link rel="stylesheet" href="../../appointment/static/Appoitment_popup.css">
+    <link rel="stylesheet" href="../../../flaskProject/components/header/static/css/Header.css">
+    <link rel="stylesheet" href="../../../flaskProject/components/footer/static/css/Footer.css">
+    <link rel="stylesheet" href="../../../flaskProject/pages/appointment/static/Appoitment_popup.css">
     <script src="../static/HomePage.js"></script>
     <script src="../../general/static/contact.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,7 @@
 <header>
     <div class="Logo">
         <div class="Sign-in">
-            <img src="../../general/static/userLogo.png" onclick="openSignIn()" height="30px" width="30px"></img>
+            <img src="../../../flaskProject/static/media/userLogo.png" onclick="openSignIn()" height="30px" width="30px"></img>
             <div class="form-popup" id="mySignIn">
                 <form class="form-container">
                     <h2>Login</h2><br>
@@ -41,35 +41,35 @@
         </div>
 
         <div class="Cart">
-            <a href="../../cart/templates/Cart.html">
-            <img src="../../general/static/cart.jpg" height="30px" width="30px"></img></a>
+            <a href="../../../flaskProject/pages/cart/templates/cart.html">
+            <img src="../../../flaskProject/static/media/cart.jpg" height="30px" width="30px"></a>
         </div>
         <div class="Logo2">
-            <img src="../../general/static/logo.jpeg" height="80px" width="80px"></img>
+            <img src="../../../flaskProject/static/media/logo.jpeg" height="80px" width="80px">
         </div>
         <div class="Facebook">
-            <img src="../../general/static/facebook.png" height="30px" width="30px"></img>
+            <img src="../../../flaskProject/static/media/facebook.png" height="30px" width="30px" href="https://he-il.facebook.com/shir.lehrer/">
         </div>
         <div class="Instagram">
-            <img src="../../general/static/instagram.png" height="30px" width="30px"></img>
+            <img src="../../../flaskProject/static/media/instagram.png" height="30px" width="30px" href="https://www.instagram.com/dr.ink.tat/">
         </div>
     </div>
     <div class="Menu">
         <a href="../templates/HomePage.html" class="Home">Home</a>
-        <a href="../../treatment/templates/Treatments.html" class="Treatment">Treatment</a>
-        <a href="../../gallery/Gallery.html" class="Gallery">Gallery</a>
-        <a href="../../shop/templates/Shop.html" class="Shop">Shop</a>
+        <a href="../../../flaskProject/pages/treatment/templates/treatments.html" class="Treatment">Treatment</a>
+        <a href="../../../flaskProject/pages/gallery/templates/Gallery.html" class="Gallery">Gallery</a>
+        <a href="../../../flaskProject/pages/shop/templates/Shop.html" class="Shop">Shop</a>
         <a href="../../user%20personal%20page/templates/User's%20Personal%20Page.html" class="Info">Personal Area</a>
     </div>
 </header>
 <div class="homepage_Main">
     <div class="opt1">
-        <video src="../static/video.mp4" width="100%;" loop autoplay muted>
+        <video src="../../../flaskProject/pages/homepage/static/media/video.mp4" width="100%;" loop autoplay muted>
             <source src="movie.mp4" type="video/mp4">
         </video>
     </div>
     <div class="opt2">
-        <img src="../static/appointment.jpg" width="100%;" height="400px;">
+        <img src="../../../flaskProject/pages/homepage/static/media/appointment.jpg" width="100%;" height="400px;">
         <div class="appointment_text" onclick="openAppointment()">Schedule an appointment</div>
         <div class="form-popup" id="myAppointment">
             <form class="form-container">
@@ -92,18 +92,18 @@
         </div>
     </div>
     <div class="opt3">
-        <img src="../static/shop.jpg" width="100%;" height="400px;">
-        <a href="../../shop/templates/Shop.html" class="shop_text">Shop</a>
+        <img src="../../../flaskProject/pages/homepage/static/media/shop.jpg" width="100%;" height="400px;">
+        <a href="../../../flaskProject/pages/shop/templates/Shop.html" class="shop_text">Shop</a>
     </div>
     <div class="opt4">
         <div class="P_Gallery">
-            <img src="../static/piercing_gallery.jpg" width="100%;" height="400px;">
+            <img src="../../../flaskProject/pages/homepage/static/media/piercing_gallery.jpg" width="100%;" height="400px;">
             <a href="../../gallery/piercing%20gallery/templates/piercing_gallery.html" class="P_Gallery_text">Piercing
                 Gallery</a>
         </div>
         <div class="Gap_Gallery"></div>
         <div class="T_Gallery">
-            <img src="../static/tattoo_gallery.jpg" width="100%;" height="400px;">
+            <img src="../../../flaskProject/pages/homepage/static/media/tattoo_gallery.jpg" width="100%;" height="400px;">
             <a href="../../gallery/tattoo%20gallery/templates/tattoo%20gallery.html" class="T_Gallery_text">Tattoo
                 Gallery</a>
         </div>

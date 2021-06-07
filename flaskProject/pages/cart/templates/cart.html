@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="he" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="../static/Cart.css">
+    <link rel="stylesheet" href="../../general/static/Header.css">
+    <link rel="stylesheet" href="../../general/static/Footer.css">
+    <link rel="stylesheet" href="../../appointment/static/Appoitment_popup.css">
+    <script src="../../homepage/static/HomePage.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="Logo">
+        <div class="Sign-in">
+            <img src="../../general/static/userLogo.png" onclick="openSignIn()" height="30px" width="30px"></img>
+            <div class="form-popup" id="mySignIn">
+                <form class="form-container">
+                    <h2>Login</h2><br>
+                    <label for="full_name" id="full_name"><b>Full Name</b></label>
+                    <br>
+                    <input type="text" placeholder="Enter Your Username" name="full_name" required>
+                    <br>
+                    <label for="password" id="password"><b>Password</b></label>
+                    <br>
+                    <input type="password" placeholder="Enter Your Password" name="password" required>
+                    <button type="submit" class="btn sign_in button-signin">SIGN IN</button>
+                </form>
+                <h4> You still don't have an account?</h4>
+                <button class="btn sign_up button-signup">
+                    <a href="../../sign%20up/templates/sign%20up.html">SIGN UP</a>
+                </button>
+                <br>
+                <button class="btn cancel button-cancel" onclick="closeSignIn()">CLOSE</button>
+                <br>
+            </div>
+        </div>
+
+        <div class="Cart">
+            <a href="../../cart/templates/Cart.html">
+            <img src="../../general/static/cart.jpg" height="30px" width="30px"></img></a>
+        </div>
+        <div class="Logo2">
+            <img src="../../general/static/logo.jpeg" height="80px" width="80px"></img>
+        </div>
+        <div class="Facebook">
+            <img src="../../general/static/facebook.png" height="30px" width="30px"></img>
+        </div>
+        <div class="Instagram">
+            <img src="../../general/static/instagram.png" height="30px" width="30px"></img>
+        </div>
+    </div>
+    <div class="Menu">
+        <a href="../../homepage/templates/HomePage.html" class="Home">Home</a>
+        <a href="../../treatment/templates/Treatments.html" class="Treatment">Treatment</a>
+        <a href="../../gallery/Gallery.html" class="Gallery">Gallery</a>
+        <a href="../../shop/templates/Shop.html" class="Shop">Shop</a>
+        <a href="../../user%20personal%20page/templates/User's%20Personal%20Page.html" class="Info">Personal Area</a>
+    </div>
+</header>
+
+<main>
+    <div class="my-cart">
+        <div class="title">
+            <h1 class="head">Shopping cart</h1>
+        </div>
+        <br><br>
+        <table class="my-products">
+            <tr>
+                <th>picture</th>
+                <th>description</th>
+                <th>options</th>
+                <th>total price</th>
+            </tr>
+            <tr>
+                <td><img class="prod-pic" src="../static/belly_piercing.jpg" alt="עגיל לבטן"/></td>
+                <td>Belly-button piercing
+                </td>
+                <td>
+
+                    <form class="options" action="">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="20" value="1">
+                    </form>
+
+                <td>
+                    <span class="total-price"> ₪200 </span>
+                    <button class="del-btn"><img class="del" src="../static/delete_pic.jpg" alt="delete"/></button>
+                </td>
+            </tr>
+            <tr>
+                <td><img class="prod-pic" src="../static/ear_piercing.jpg" alt="צמד עגילים אינדיאנים"/></td>
+                <td>
+                    Indian earings
+                </td>
+                <td>
+
+                    <form class="options" action="">
+                        <label class="checki" for="quantity5">Quantity </label>
+                        <input type="number" id="quantity5" name="quantity" min="1" max="20" value="1">
+                    </form>
+
+                </td>
+                <td>
+                    <span class="total-price"> ₪200 </span>
+                    <button class="del-btn"><img class="del" src="../static/delete_pic.jpg" alt="delete"/></button>
+                </td>
+        </table>
+    </div>
+    <div class="button-submit">
+        <button type="submit">Go to payment</button>
+    </div>
+</main>
+</body>
+<footer>
+    <div class="Footer">
+        <div class="Contact" onclick="openContactUs()">Contact Us</div>
+        <div class="form-popup" id="myContact">
+            <form class="form-container">
+                <h2>Contact Us:</h2>
+                <label for="name" id="name"><b>Full Name</b></label>
+                <br>
+                <input type="text" placeholder="Enter Your name" name="name" required>
+                <br>
+                <label for="email" id="email"><b>Email</b></label>
+                <br>
+                <input type="email" placeholder="Enter Your Email" name="email" required>
+                <br>
+                <label for="massage" id="massage"><b>What would you like to tell us?</b></label>
+                <br>
+                <input type="massage" placeholder="Enter Your Massage" name="massage" required>
+                <button type="submit" class="btn">Send</button>
+                <br>
+                <button class="btn cancel" onclick="closeContactUs()">Close</button>
+            </form>
+        </div>
+        <div class="Privacy_policy">
+            <a href="../../Privacy%20Policy/templates/Privacy%20Policy.html">Privacy Policy</a></div>
+        <div class="About">
+            <a href="../../about/tamplates/About.html">About</a>
+        </div>
+    </div>
+</footer>
+</html>

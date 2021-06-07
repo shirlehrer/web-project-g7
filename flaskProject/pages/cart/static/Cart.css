@@ -1,0 +1,230 @@
+*{
+    box-sizing: border-box;
+    font-family:Calibri,sans-serif;
+    margin: 0;
+
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 50px;
+    background-image: url(../../../static/media/Balg6Fx.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.head {
+    font-family: 'New Tegomin', serif;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 10%;
+}
+
+main{
+    padding: 70px 0;
+}
+
+.my-cart .title {
+    height: 40px;
+}
+
+.my-cart{
+    align-content: center;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.my-cart .cart{
+    align-content: center;
+}
+
+.my-cart h1{
+    font-weight: bold;
+    padding: 5px 5px 20px 5px ;
+    text-align: center;
+    font-size: 60px;
+}
+
+.title{
+    margin-bottom: 50px;
+}
+
+
+.prod-pic{
+    width: 200Px;
+}
+
+.my-cart h3{
+
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+    font-size:20px ;
+}
+
+
+.my-products {
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.my-products td, .my-products th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    width: 20%;
+    text-align: center;
+    color: white;
+    background-color: transparent;
+}
+
+.my-products td .options{
+    text-align: left;
+    color: white;
+    position: relative;
+    left: 15%;
+}
+
+.checki{
+    margin-bottom: 10px;
+}
+
+.total-price{
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+.my-products td a{
+    text-decoration: underline ;
+}
+
+.my-products td .del{
+    width: 20px;
+    height: 20px;
+}
+
+.del-btn{
+    background-color: transparent;
+    border: none;
+    float: left;
+    cursor: pointer;
+    position: relative;
+}
+
+.my-products td a:hover{
+    font-weight: bolder ;
+}
+
+.my-products tr:nth-child(even){
+    background-color: transparent;
+}
+/*.my-products tr:nth-child(odd){background-color:var('--main-color-5', white) }*/
+
+
+.my-products th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+}
+
+
+.container {
+
+    width: 30%;
+    background-color: #f2f2f2;
+    padding: 10px 20px 15px 20px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+  /*  color: var(--main-color-4, black);*/
+
+}
+
+.order .container{
+    margin:50px 740px 0 0 ;
+
+}
+
+span.price {
+    float: left;
+    color: gray;
+}
+
+span.price.total{
+
+}
+
+p>a{
+    text-decoration: none;
+    text-decoration-line: underline;
+
+}
+
+p>a:hover{
+    font-weight: bolder;
+}
+
+.container p{
+    margin-bottom: 5px;
+}
+
+.container h4{
+    font-size: 20px ;
+}
+
+.button{
+    align-content: center;
+}
+.my-button{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    /*background-color: var(--button-main-color,#fdd631);
+    color: var(--main-color-4, black);*/
+    border-radius: 12px;
+    width: 30%;
+    height: 50px;
+    font-size: 30px  ;
+    margin-right: 65%;
+    text-decoration: none;
+}
+.my-button:hover{
+    cursor: pointer;
+    /*background-color: var(--button-hover-color,#ddb631);*/
+
+}
+.my-button:focus{
+    outline: none;
+}
+
+
+.link-button {
+    text-decoration: none;
+    color: white;
+}
+
+
+.button-submit button {
+    align-content: center;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: lightslategray;
+    color: black;
+    border-radius: 12px;
+    width: 30%;
+    height: 40px;
+    font-size: 20px;
+    margin-left: 35%;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.button-submit button:focus {
+    outline: none;
+}
+
+.button-submit button:hover {
+    cursor: pointer;
+    background-color: lightblue;
+}

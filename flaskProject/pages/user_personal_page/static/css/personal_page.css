@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 50px;
+    background-image: url(../../../../static/media/Balg6Fx.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.Users_Personal_page {
+  width: 75%;
+  text-align: center;
+  margin: auto;
+}
+
+/*.My_Appointment{
+  float: right;
+    padding: 20px;
+    border: 1px solid black;
+    width: 30%;
+    text-align: center;
+    margin-right: 15%;
+    margin-top: 20px;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.My_Orders{
+    float: left;
+    padding: 20px;
+    border: 1px solid black;
+    width: 30%;
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 15%;
+    margin-top: 20px;
+    margin: auto;
+    margin-bottom: 50px;
+}*/
+#Appoverlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+#Apptext{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+.Appblock {
+  display: block;
+  width: 81%;
+  margin-top: 50px;
+  border: none;
+  background: url("../../../../static/media/wood_calendar.jpg") center center;
+  font-size: 30px;
+  cursor: pointer;
+  text-align: center;
+  height: 300px;
+  color: white;
+}
+
+.app{
+  padding-left: 7%;
+}
+
+.Appblock:hover{
+  font-size: 35px;
+}
+#Orderstext{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+.Ordersblock {
+  display: block;
+  width: 90%;
+  border: none;
+  background: url("../media/cartt.jpg") center center;
+  background-repeat: no-repeat;
+  font-size: 30px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  height: 300px;
+  text-align: center;
+  color: white;
+}
+
+.Ordersblock:hover{
+  font-size: 35px;
+}
+
+#Ordersoverlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+#NewOrder {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  font-size: 35px;
+  color: lightblue;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  text-decoration: underline;
+}
+#NewAppointment{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  font-size: 35px;
+  color: lightblue;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  text-decoration: underline;
+}

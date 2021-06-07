@@ -1,0 +1,117 @@
+.homepage_Main{
+    width:75%;
+    margin: auto;
+    text-align: center;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 50px;
+    background-image: url(../../../flaskProject/static/media/Balg6Fx.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.opt1 {
+    margin-top :100px;
+}
+
+.opt2 {
+    position: relative;
+    text-align: center;
+    margin-top :50px;
+}
+
+.appointment_text {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+}
+
+.appointment_text:hover{
+    font-size: 35px;
+}
+
+.opt3 {
+    position: relative;
+    text-align: center;
+    margin-top :50px;
+}
+
+.shop_text {
+    text-decoration: none;
+    cursor:pointer;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+}
+
+.opt3 :hover{
+    font-size: 35px;
+}
+
+.opt4 {
+    display: table;
+    margin-top :50px;
+    width: 100%;
+    height:200px;
+    margin-bottom :100px;
+}
+
+.P_Gallery {
+    position: relative;
+    text-align: center;
+    display: table-cell;
+    width: 47.5%;
+}
+
+.P_Gallery_text {
+    text-decoration: none;
+    cursor:pointer;
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+}
+
+.P_Gallery :hover{
+    font-size: 35px;
+}
+
+.Gap_Gallery {
+    display: table-cell;
+    width: 5%;
+}
+
+.T_Gallery{
+    position: relative;
+    text-align: center;
+    display: table-cell;
+    width: 47.5%;
+}
+
+.T_Gallery_text {
+    text-decoration: none;
+    cursor:pointer;
+    position: absolute;
+    font-size: 20px;
+    top: 20%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+}
+
+.T_Gallery :hover{
+    font-size: 35px;
+}
