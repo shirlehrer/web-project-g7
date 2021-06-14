@@ -6,5 +6,6 @@ catalog = Blueprint('personal_page', __name__, static_folder='css', static_url_p
 
 # Routes
 @catalog.route('/personal_page')
-def index():
+def personal_page():
     return render_template('personal_page.html')
+

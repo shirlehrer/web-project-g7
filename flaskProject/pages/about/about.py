@@ -6,5 +6,5 @@ about = Blueprint('about', __name__, static_folder='css', static_url_path='/abou
 
 # Routes
 @about.route('/about')
-def index():
+def about():
     return render_template('about.html')

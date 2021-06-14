@@ -6,5 +6,5 @@ catalog = Blueprint('privacy_policy', __name__, static_folder='css', static_url_
 
 # Routes
 @catalog.route('/privacy_policy')
-def index():
+def privacy_policy():
     return render_template('privacy_policy.html')

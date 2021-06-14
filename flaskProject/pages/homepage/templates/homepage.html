@@ -1,31 +1,13 @@
 {% extends 'base.html' %}
-{##}
-{#{% set page_head_title = 'Homepage' %}#}
-{##}
-{#{% block page_body_main_content %}#}
-{#    Welcome!#}
-{#{% endblock %}#}
-{##}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="../static/Homepage.css">
-    <link rel="stylesheet" href="../../../flaskProject/static/css/Header.css">
-    <link rel="stylesheet" href="../../../flaskProject/static/css/Footer.css">
-    <link rel="stylesheet" href="../../appointment/static/Appoitment_popup.css">
-    <script src="../static/HomePage.js"></script>
-    <script src="../../general/static/contact.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-</head>
-<body>
-<header>
+{% set page_head_title = 'Homepage' %}
 
-</header>
+{% block page_head_css %}
+    <link rel="stylesheet" href="{{ url_for('Appoitment_popup.static', filename='../../appointment/static/Appoitment_popup.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('homepage.static', filename='../../homepage/static/css/homepage.css') }}"/>
+{% endblock %}
+
+{% block page_body_main_content %}
 <div class="homepage_Main">
     <div class="opt1">
         <video src="../../../flaskProject/pages/homepage/static/media/video.mp4" width="100%;" loop autoplay muted>
@@ -73,35 +55,10 @@
         </div>
     </div>
 </div>
-</body>
-<footer>
-    <div class="Footer">
-        <div class="Contact" onclick="openContactUs()">Contact Us</div>
-        <div class="form-popup" id="myContact">
-            <form class="form-container">
-                <h2>Contact Us:</h2>
-                <label for="name" id="name"><b>Full Name</b></label>
-                <br>
-                <input type="text" placeholder="Enter Your name" name="name" required>
-                <br>
-                <label for="email" id="email"><b>Email</b></label>
-                <br>
-                <input type="email" placeholder="Enter Your Email" name="email" required>
-                <br>
-                <label for="massage" id="massage"><b>What would you like to tell us?</b></label>
-                <br>
-                <input type="massage" placeholder="Enter Your Massage" name="massage" required>
-                <button type="submit" class="btn">Send</button>
-                <br>
-                <button class="btn cancel" onclick="closeContactUs()">Close</button>
-            </form>
-        </div>
-        <div class="Privacy_policy">
-            <a href="../../Privacy%20Policy/templates/Privacy%20Policy.html">Privacy Policy</a></div>
-        <div class="About">
-            <a href="../../about/tamplates/About.html">About</a>
-        </div>
-    </div>
-</footer>
-</html>
+{% endblock %}
+
+
+{% block page_body_js %}
+    <script src="{{ url_for('Gallery.static', filename='../../homepage/static/js/homepage.js') }}"></script>
+{% endblock %}
 

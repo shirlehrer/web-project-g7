@@ -6,5 +6,7 @@ catalog = Blueprint('piercing_gallery', __name__, static_folder='css', static_ur
 
 # Routes
 @catalog.route('/piercing_gallery')
-def index():
+def piercing_gallery():
     return render_template('piercing_gallery.html')
+
+

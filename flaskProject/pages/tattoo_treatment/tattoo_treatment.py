@@ -6,5 +6,6 @@ catalog = Blueprint('tattoo_treatment', __name__, static_folder='css', static_ur
 
 # Routes
 @catalog.route('/tattoo_treatment')
-def index():
+def tattoo_treatment():
     return render_template('tattoo_treatment.html')
+

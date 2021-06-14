@@ -6,5 +6,7 @@ catalog = Blueprint('shop', __name__, static_folder='css', static_url_path='/sho
 
 # Routes
 @catalog.route('/shop')
-def index():
+def shop():
     return render_template('Shop.html')
+
+

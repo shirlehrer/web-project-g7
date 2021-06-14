@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ page_lang|default("he", true) }}">
-    <head>
+<head>
     {% block page_head %}
         {# Title #}
         <title>{{ page_head_title_author|default('Dr.Ink', true) }}
@@ -12,23 +12,19 @@
             <meta charset="UTF-8"/>
             <meta name="author" content="group 7"/>
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta name="description" content="Flask skeleton project as a base to start developing on"/>
-            <meta name="keywords" content="flask, lean, skeleton, project, structure, environment, setup, template, fullstack, web, development, app, university, education"/>
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
             {% block page_head_meta_extra %}{% endblock %}
         {% endblock %}
-
-        {# favicon #}
-        <link rel="icon" href="{{ url_for('static', filename='media/logo.jpeg') }}"/>
-
-        {# Base #}
-        <base href="/"/>
 
         {# CSS #}
         <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}"/>
         {% block page_head_css %}{% endblock %}
     {% endblock %}
-    </head>
-    <body>
+</head>
+<body>
         {% block page_body_content %}
 
             {# Header #}
@@ -40,11 +36,20 @@
 
             {# Main #}
             {% block page_body_main %}
-                <main class="page-main">
-                  {% block page_body_main_content %}
-                  {% endblock %}
-                </main>
-            {% endblock %}
+                    <div class="percenter">
+                        <main class="row-main">
+                            {% with messages = get_flashed_messages() %}
+                                {% if messages %}
+                                    {% for message in messages %}
+                                        <h3 style="color:#ff0000;margin-top:5vmin">{{ message }}</h3>
+                                    {% endfor %}
+                                {% endif %}
+                            {% endwith %}
+                            {% block page_body_main_content %}
+                            {% endblock %}
+                        </main>
+                    </div>
+                {% endblock %}
 
             {# Footer #}
             {% block page_body_footer %}
@@ -60,5 +65,9 @@
         {# JS #}
         <script src="{{ url_for('static', filename='js/base.js') }}"></script>
         {% block page_body_js %}{% endblock %}
-    </body>
+</body>
 </html>
+
+
+
+
