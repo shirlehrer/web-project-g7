@@ -16,7 +16,7 @@ from pages.homepage.homepage import homepage
 app.register_blueprint(homepage)
 
 ## About
-from flaskProject.pages.about.about import about
+from pages.about.about import about
 
 app.register_blueprint(about)
 
