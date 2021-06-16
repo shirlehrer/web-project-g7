@@ -21,10 +21,11 @@
 
         {# CSS #}
         <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}"/>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/general.css') }}"/>
         {% block page_head_css %}{% endblock %}
     {% endblock %}
 </head>
-<body>
+<body onload="closeSignIn() ,closeContactUs(), closeAppointment(), Appoff(), Ordersoff()">
         {% block page_body_content %}
 
             {# Header #}
@@ -36,7 +37,7 @@
 
             {# Main #}
             {% block page_body_main %}
-                    <div class="percenter">
+                    <div>
                         <main class="row-main">
                             {% with messages = get_flashed_messages() %}
                                 {% if messages %}
@@ -51,7 +52,7 @@
                     </div>
                 {% endblock %}
 
-            {# Footer #}
+             {# Footer #}
             {% block page_body_footer %}
                 <footer class="page-footer">
                      {% include 'footer.html' %}
@@ -64,6 +65,7 @@
 
         {# JS #}
         <script src="{{ url_for('static', filename='js/base.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/homepage.js') }}"></script>
         {% block page_body_js %}{% endblock %}
 </body>
 </html>

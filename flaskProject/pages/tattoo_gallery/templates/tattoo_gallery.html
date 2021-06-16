@@ -3,7 +3,7 @@
 {% set page_head_title = 'tattoo_gallery' %}
 
 {% block page_head_css %}
-    <link rel="stylesheet" href="{{ url_for('tattoo_gallery.static', filename='../../tattoo_gallery/static/css/gallery.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('tattoo_gallery.static', filename='/css/gallery.css') }}"/>
 {% endblock %}
 
 {% block page_body_main_content %}
@@ -17,48 +17,44 @@
     <div class="container">
         <div class="top">
             <ul>
-                <li><a href="#img_1"><img src="../static/media/tattoo1.jpg"></a></li>
-                <li><a href="#img_2"><img src="../static/media/tattoo2.jpg"></a></li>
-                <li><a href="#img_3"><img src="../static/media/tattoo3.jpg"></a></li>
-                <li><a href="#img_4"><img src="../static/media/tattoo4.jpg"></a></li>
-                <li><a href="#img_5"><img src="../static/media/tattoo5.jpg"></a></li>
-                <li><a href="#img_6"><img src="../static/media/tattoo6.jpg"></a></li>
-                <li><a href="#img_7"><img src="../static/media/tattoo7.jpg"></a></li>
-                <li><a href="#img_8"><img src="../static/media/tattoo8.png"></a></li>
-                <li><a href="#img_9"><img src="../static/media/tattoo9.jpg"></a></li>
-                <li><a href="#img_10"><img src="../static/media/tattoo10.jpeg"></a></li>
-                <li><a href="#img_11"><img src="../static/media/tattoo11.jpg"></a></li>
-                <li><a href="#img_12"><img src="../static/media/tattoo12.jpg"></a></li>
-                <li><a href="#img_13"><img src="../static/media/tattoo13.jpg"></a></li>
-                <li><a href="#img_14"><img src="../static/media/tattoo14.jpg"></a></li>
-                <li><a href="#img_15"><img src="../static/media/tattoo15.jpg"></a></li>
-                <li><a href="#img_16"><img src="../static/media/tattoo16.jpg"></a></li>
+                <li><a href="#img_1"><img src="{{ url_for('tattoo_gallery.static', filename='/media/tattoo1.jpg') }}"></a></li>
+                <li><a href="#img_2"><img src="{{ url_for('tattoo_gallery.static', filename='/media/tattoo2.jpg') }}"></a></li>
+                <li><a href="#img_3"><img src="{{ url_for('tattoo_gallery.static', filename='/media/tattoo3.jpg') }}"></a></li>
+                <li><a href="#img_4"><img src="{{ url_for('tattoo_gallery.static', filename='/media/tattoo4.jpg') }}"></a></li>
+                <li><a href="#img_5"><img src="{{ url_for('tattoo_gallery.static', filename='/media/tattoo5.jpg') }}"></a></li>
+                <li><a href="#img_6"><img src="{{ url_for('tattoo_gallery.static', filename='/media/tattoo6.jpg') }}"></a></li>
+                <li><a href="#img_7"><img src="{{ url_for('tattoo_gallery.static', filename='/media/tattoo7.jpg') }}"></a></li>
+                <li><a href="#img_8"><img src="{{ url_for('tattoo_gallery.static', filename='/media/tattoo8.png') }}"></a></li>
+                <li><a href="#img_9"><img src="{{ url_for('tattoo_gallery.static', filename='/media/tattoo9.jpg') }}"></a></li>
+                <li><a href="#img_10"><img src="{{ url_for('tattoo_gallery.static', filename='/media/tattoo10.jpeg') }}"></a></li>
+                <li><a href="#img_11"><img src="{{ url_for('tattoo_gallery.static', filename='/media/tattoo11.jpg') }}"></a></li>
+                <li><a href="#img_12"><img src="{{ url_for('tattoo_gallery.static', filename='/media/tattoo12.jpg') }}"></a></li>
+                <li><a href="#img_13"><img src="{{ url_for('tattoo_gallery.static', filename='/media/tattoo13.jpg') }}"></a></li>
+                <li><a href="#img_14"><img src="{{ url_for('tattoo_gallery.static', filename='/media/tattoo14.jpg') }}"></a></li>
+                <li><a href="#img_15"><img src="{{ url_for('tattoo_gallery.static', filename='/media/tattoo15.jpg') }}"></a></li>
+                <li><a href="#img_16"><img src="{{ url_for('tattoo_gallery.static', filename='/media/tattoo16.jpg') }}"></a></li>
             </ul>
-            <a href="#_1" class="lightbox trans" id="img_1"><img src=../static/media/tattoo1.jpg></a>
-            <a href="#_2" class="lightbox trans" id="img_2"><img src=../static/media/tattoo2.jpg></a>
-            <a href="#_3" class="lightbox trans" id="img_3"><img src=../static/media/tattoo3.jpg></a>
-            <a href="#_4" class="lightbox trans" id="img_4"><img src=../static/media/tattoo4.jpg></a>
-            <a href="#_5" class="lightbox trans" id="img_5"><img src=../static/media/tattoo5.jpg></a>
-            <a href="#_6" class="lightbox trans" id="img_6"><img src=../static/media/tattoo6.jpg></a>
-            <a href="#_7" class="lightbox trans" id="img_7"><img src=../static/media/tattoo7.jpg></a>
-            <a href="#_8" class="lightbox trans" id="img_8"><img src=../static/media/tattoo8.png></a>
-            <a href="#_9" class="lightbox trans" id="img_9"><img src=../static/media/tattoo9.jpg></a>
-            <a href="#_10" class="lightbox trans" id="img_10"><img src="../static/media/tattoo10.jpeg"></a>
-            <a href="#_11" class="lightbox trans" id="img_11"><img src="../static/media/tattoo11.jpg"></a>
-            <a href="#_12" class="lightbox trans" id="img_12"><img src="../static/media/tattoo12.jpg"></a>
-            <a href="#_13" class="lightbox trans" id="img_13"><img src="../static/media/tattoo13.jpg"></a>
-            <a href="#_14" class="lightbox trans" id="img_14"><img src="../static/media/tattoo14.jpg"></a>
-            <a href="#_15" class="lightbox trans" id="img_15"><img src="../static/media/tattoo15.jpg"></a>
-            <a href="#_16" class="lightbox trans" id="img_16"><img src="../static/media/tattoo16.jpg"></a>
+            <a href="#_1" class="lightbox trans" id="img_1"><img src="{{ url_for('tattoo_gallery.static', filename='/media/tattoo1.jpg') }}"></a>
+            <a href="#_2" class="lightbox trans" id="img_2"><img src="{{ url_for('tattoo_gallery.static', filename='/media/tattoo2.jpg') }}"></a>
+            <a href="#_3" class="lightbox trans" id="img_3"><img src="{{ url_for('tattoo_gallery.static', filename='/media/tattoo3.jpg') }}"></a>
+            <a href="#_4" class="lightbox trans" id="img_4"><img src="{{ url_for('tattoo_gallery.static', filename='/media/tattoo4.jpg') }}"></a>
+            <a href="#_5" class="lightbox trans" id="img_5"><img src="{{ url_for('tattoo_gallery.static', filename='/media/tattoo5.jpg') }}"></a>
+            <a href="#_6" class="lightbox trans" id="img_6"><img src="{{ url_for('tattoo_gallery.static', filename='/media/tattoo6.jpg') }}"></a>
+            <a href="#_7" class="lightbox trans" id="img_7"><img src="{{ url_for('tattoo_gallery.static', filename='/media/tattoo7.jpg') }}"></a>
+            <a href="#_8" class="lightbox trans" id="img_8"><img src="{{ url_for('tattoo_gallery.static', filename='/media/tattoo8.png') }}"></a>
+            <a href="#_9" class="lightbox trans" id="img_9"><img src="{{ url_for('tattoo_gallery.static', filename='/media/tattoo9.jpg') }}"></a>
+            <a href="#_10" class="lightbox trans" id="img_10"><img src="{{ url_for('tattoo_gallery.static', filename='/media/tattoo10.jpeg') }}"></a>
+            <a href="#_11" class="lightbox trans" id="img_11"><img src="{{ url_for('tattoo_gallery.static', filename='/media/tattoo11.jpg') }}"></a>
+            <a href="#_12" class="lightbox trans" id="img_12"><img src="{{ url_for('tattoo_gallery.static', filename='/media/tattoo12.jpg') }}"></a>
+            <a href="#_13" class="lightbox trans" id="img_13"><img src="{{ url_for('tattoo_gallery.static', filename='/media/tattoo13.jpg') }}"></a>
+            <a href="#_14" class="lightbox trans" id="img_14"><img src="{{ url_for('tattoo_gallery.static', filename='/media/tattoo14.jpg') }}"></a>
+            <a href="#_15" class="lightbox trans" id="img_15"><img src="{{ url_for('tattoo_gallery.static', filename='/media/tattoo15.jpg') }}"></a>
+            <a href="#_16" class="lightbox trans" id="img_16"><img src="{{ url_for('tattoo_gallery.static', filename='/media/tattoo16.jpg') }}"></a>
         </div>
     </div>
     <br><br><br>
 </div>
 {% endblock %}
-
-{% block page_body_footer %}{% endblock %}
-
-
 
 
 

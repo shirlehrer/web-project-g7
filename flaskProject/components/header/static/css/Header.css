@@ -76,6 +76,10 @@
     background-color: lightblue;
 }
 
+header{
+    color: white;
+}
+
 .Cart{
     width: 5%;
     display: table-cell;
@@ -125,6 +129,7 @@
 .Home{
     display: table-cell;
     width: 20%;
+    color: white;
 }
 
 .Gallery{

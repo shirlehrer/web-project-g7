@@ -4,14 +4,7 @@
     text-align: center;
 }
 
-body{
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 50px;
-    background-image: url(../../../flaskProject/static/media/Balg6Fx.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-}
+
 
 .opt1 {
     margin-top :100px;
@@ -104,7 +97,7 @@ body{
     text-decoration: none;
     cursor:pointer;
     position: absolute;
-    font-size: 20px;
+    /*font-size: 20px;*/
     top: 20%;
     left: 80%;
     transform: translate(-50%, -50%);

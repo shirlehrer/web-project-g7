@@ -3,22 +3,16 @@
 {% set page_head_title = 'treatment' %}
 
 {% block page_head_css %}
-    <link rel="stylesheet" href="{{ url_for('treatment.static', filename='../../treatment/static/css/Treatments.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('treatment.static', filename='/css/Treatments.css') }}"/>
 {% endblock %}
 
 {% block page_body_main_content %}
 
 <div class="row">
     <div class="col-2 right main1">
-        <a href="../../tattoo_treatment/templates/Tattoo_Treatments.html" style="text-decoration:none"> Tattoo Treatments </a></div>
+        <a href="/tattoo_treatment" style="text-decoration:none"> Tattoo Treatments </a></div>
     <div class="col-2 right main2">
-        <a href="../../piercing_treatment/templates/Piercing_Treatments.html" style="text-decoration:none"> Piercing Treatments </a></div>
+        <a href="/piercing_treatment" style="text-decoration:none"> Piercing Treatments </a></div>
 </div>
-{% endblock %}
-
-{% block page_body_footer %}{% endblock %}
-
-{% block page_body_js %}
-    <script src="{{ url_for('Gallery.static', filename='js/catalog.js') }}"></script>
 {% endblock %}
 

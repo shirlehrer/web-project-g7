@@ -3,26 +3,23 @@
 {% set page_head_title = 'Gallery' %}
 
 {% block page_head_css %}
-    <link rel="stylesheet" href="{{ url_for('Gallery.static', filename='../../gallery/static/css/FullGallery.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('gallery.static', filename='/css/FullGallery.css') }}"/>
 {% endblock %}
 
 {% block page_body_main_content %}
 
 <div class="row">
     <div class="col-2 right main1">
-        <a href="../../../../web-project-g7-master/gallery/tattoo%20gallery/templates/tattoo%20gallery.html"
+        <a href="/tattoo_gallery"
            style="text-decoration:none"> Tattoo Gallery </a>
     </div>
     <div class="col-2 right main2">
-        <a href="../../../../web-project-g7-master/gallery/piercing%20gallery/templates/piercing_gallery.html"
+        <a href="/piercing_gallery"
            style="text-decoration:none"> Piercing Gallery </a>
     </div>
 </div>
 
 {% endblock %}
 
-{% block page_body_footer %}{% endblock %}
 
-{% block page_body_js %}
-    <script src="{{ url_for('Gallery.static', filename='js/catalog.js') }}"></script>
-{% endblock %}
+

@@ -3,7 +3,7 @@
 {% set page_head_title = 'tattoo_treatment' %}
 
 {% block page_head_css %}
-    <link rel="stylesheet" href="{{ url_for('tattoo_treatment.static', filename='../../tattoo_treatment/static/css/Tattoo_Treatment.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('tattoo_treatment.static', filename='/css/Tattoo_Treatments.css') }}"/>
 {% endblock %}
 
 {% block page_body_main_content %}
@@ -44,11 +44,5 @@
 {% endblock %}
 
 {% block page_body_footer %}{% endblock %}
-
-{% block page_body_js %}
-    <script src="{{ url_for('Gallery.static', filename='js/catalog.js') }}"></script>
-{% endblock %}
-
-
 
 

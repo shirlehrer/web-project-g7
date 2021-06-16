@@ -3,7 +3,7 @@
 {% set page_head_title = 'cart' %}
 
 {% block page_head_css %}
-    <link rel="stylesheet" href="{{ url_for('cart.static', filename='../../cart/static/css/Cart.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('cart.static', filename='/css/Cart.css') }}"/>
 {% endblock %}
 
 
@@ -23,7 +23,7 @@
                 <th>total price</th>
             </tr>
             <tr>
-                <td><img class="prod-pic" src="../static/belly_piercing.jpg" alt="עגיל לבטן"/></td>
+                <td><img class="prod-pic" src="{{ url_for('cart.static', filename='/media/belly_piercing.jpg') }}" alt="belly piercing"/></td>
                 <td>Belly-button piercing
                 </td>
                 <td>
@@ -35,11 +35,11 @@
 
                 <td>
                     <span class="total-price"> ₪200 </span>
-                    <button class="del-btn"><img class="del" src="../static/delete_pic.jpg" alt="delete"/></button>
+                    <button class="del-btn"><img class="del" src="{{ url_for('cart.static', filename='/media/delete_pic.jpg') }}" alt="delete"/></button>
                 </td>
             </tr>
             <tr>
-                <td><img class="prod-pic" src="../static/ear_piercing.jpg" alt="צמד עגילים אינדיאנים"/></td>
+                <td><img class="prod-pic" src="{{ url_for('cart.static', filename='/media/ear_piercing.jpg') }}" alt="צמד עגילים אינדיאנים"/></td>
                 <td>
                     Indian earings
                 </td>
@@ -53,7 +53,7 @@
                 </td>
                 <td>
                     <span class="total-price"> ₪200 </span>
-                    <button class="del-btn"><img class="del" src="../static/delete_pic.jpg" alt="delete"/></button>
+                    <button class="del-btn"><img class="del" src="{{ url_for('cart.static', filename='/media/delete_pic.jpg') }}" alt="delete"/></button>
                 </td>
         </table>
     </div>
@@ -62,16 +62,6 @@
     </div>
 </main>
 {% endblock %}
-
-
-
-{% block page_body_footer %}{% endblock %}
-
-{% block page_body_js %}
-    <script src="{{ url_for('cart.static', filename='js/cart.js') }}"></script>
-{% endblock %}
-
-
 
 
 

@@ -1,7 +1,5 @@
-<link rel="stylesheet" href="../../../flaskProject/static/css/Header.css">
-<script src="../static/HomePage.js"></script>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="{{ url_for('header.static', filename='css/Header.css') }}"/>
 
 {% block page_body_header_content %}
 
@@ -11,8 +9,8 @@
     <nav class="main-menu">
         <div class="Logo">
             <div class="Sign-in">
-                <img src="../../../static/media/userLogo.png" onclick="openSignIn()" height="30px"
-                     width="30px"></img>
+                <img src="{{ url_for('static', filename='/media/userLogo.png') }}" onclick="openSignIn()" height="30px"
+                     width="30px">
                 <div class="form-popup" id="mySignIn">
                     <form class="form-container">
                         <h2>Login</h2><br>
@@ -27,7 +25,7 @@
                     </form>
                     <h4> You still don't have an account?</h4>
                     <button class="btn sign_up button-signup">
-                        <a href="../../../pages/sign_up/templates/sign_up.html">SIGN UP</a>
+                        <a href="/sign_up">SIGN UP</a>
                     </button>
                     <br>
                     <button class="btn cancel button-cancel" onclick="closeSignIn()">CLOSE</button>
@@ -36,27 +34,27 @@
             </div>
 
             <div class="Cart">
-                <a href="../../cart/templates/cart.html">
-                    <img src="../../../flaskProject/static/media/cart.jpg" height="30px" width="30px"></a>
+                <a href="/cart">
+                    <img src="{{ url_for('static', filename='/media/cart.jpg') }}" height="30px" width="30px"></a>
             </div>
             <div class="Logo2">
-                <img src="../../../flaskProject/static/media/logo.jpeg" height="80px" width="80px">
+                <img src="{{ url_for('static', filename='/media/logo.jpeg') }}" height="80px" width="80px">
             </div>
             <div class="Facebook">
-                <img src="../../../flaskProject/static/media/facebook.png" height="30px" width="30px"
+                <img src="{{ url_for('static', filename='/media/facebook.png') }}" height="30px" width="30px"
                      href="https://he-il.facebook.com/shir.lehrer/">
             </div>
             <div class="Instagram">
-                <img src="../../../flaskProject/static/media/instagram.png" height="30px" width="30px"
+                <img src="{{ url_for('static', filename='/media/instagram.png') }}" height="30px" width="30px"
                      href="https://www.instagram.com/dr.ink.tat/">
             </div>
         </div>
         <div class="Menu">
-            <a href="../../../pages/homepage/templates/homepage.html" class="Home">Home</a>
-            <a href="../../../pages/treatment/templates/treatments.html" class="Treatment">Treatment</a>
-            <a href="../../../pages/gallery/templates/Gallery.html" class="Gallery">Gallery</a>
-            <a href="../../../pages/shop/templates/Shop.html" class="Shop">Shop</a>
-            <a href="../../../pages/user_personal_page/templates/personal_page.html" class="Info">Personal Area</a>
+            <a href="/" class="Home">Home</a>
+            <a href="/treatment" class="Treatment">Treatment</a>
+            <a href="/gallery" class="Gallery">Gallery</a>
+            <a href="/shop" class="Shop">Shop</a>
+            <a href="/personal_page" class="Info">Personal Area</a>
         </div>
     </nav>
 </header>

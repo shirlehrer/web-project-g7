@@ -4,14 +4,6 @@
     margin: 0;
 
 }
-body{
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 50px;
-    background-image: url(../../../static/media/Balg6Fx.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-}
 
 .head {
     font-family: 'New Tegomin', serif;

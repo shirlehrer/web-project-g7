@@ -3,7 +3,7 @@
 {% set page_head_title = 'piercing_gallery' %}
 
 {% block page_head_css %}
-    <link rel="stylesheet" href="{{ url_for('piercing_gallery.static', filename='../../piercing_gallery/static/css/piercing_gallery.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('piercing_gallery.static', filename='/css/piercing_gallery.css') }}"/>
 {% endblock %}
 
 
@@ -16,8 +16,8 @@
         </div>
     </div>
     <div class="parts">
-        <a href="piercing_gallery.html">Ears</a>
-        <a href="piercing_gallery.html">Microdermal</a>
+        <a href="/piercing_gallery">Ears</a>
+        <a href="/piercing_gallery">Microdermal</a>
         <a href="#nose">Nose</a>
         <a href="#lips">Lips</a>
     </div>
@@ -27,15 +27,15 @@
         <h2 id="nose" class="piercing-heads">Nose</h2>
         <div class="slideshow-container">
             <div class="mySlides1">
-                <img class="SlideImg" src="../static/media/nose1.jpg" style="width:50%">
+                <img class="SlideImg" src="{{ url_for('piercing_gallery.static', filename='/media/nose1.jpg') }}" style="width:50%">
             </div>
 
             <div class="mySlides1">
-                <img class="SlideImg" src="../static/media/nose2.jpg" style="width:50%">
+                <img class="SlideImg" src="{{ url_for('piercing_gallery.static', filename='/media/nose2.jpg') }}" style="width:50%">
             </div>
 
             <div class="mySlides1">
-                <img class="SlideImg" src="../static/media/nose3.jfif" style="width:50%">
+                <img class="SlideImg" src="{{ url_for('piercing_gallery.static', filename='/media/nose3.jfif') }}" style="width:50%">
             </div>
 
             <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
@@ -51,15 +51,15 @@
         <h2 id="lips" class="piercing-heads">Lips</h2>
         <div class="slideshow-container">
             <div class="mySlides2">
-                <img class="SlideImg" src="../static/media/lips1.jpg" style="width:50%">
+                <img class="SlideImg" src="{{ url_for('piercing_gallery.static', filename='/media/lips1.jpg') }}" style="width:50%">
             </div>
 
             <div class="mySlides2">
-                <img class="SlideImg" src="../static/media/lips2.jpg" style="width:50%">
+                <img class="SlideImg" src="{{ url_for('piercing_gallery.static', filename='/media/lips2.jpg') }}" style="width:50%">
             </div>
 
             <div class="mySlides2">
-                <img class="SlideImg" src="../static/media/lips3.jpg" style="width:50%">
+                <img class="SlideImg" src="{{ url_for('piercing_gallery.static', filename='/media/lips3.jpg') }}" style="width:50%">
             </div>
 
             <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
@@ -78,7 +78,7 @@
 
 
 {% block page_body_js %}
-    <script src="{{ url_for('piercing_gallery.static', filename='../../piercing_gallery/static/js/piercing_gallery.js') }}"></script>
+    <script src="{{ url_for('piercing_gallery.static', filename='/js/piercing_gallery.js') }}"></script>
 {% endblock %}
 
 

@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% set page_head_title = 'Piercing_Treatments' %}
+
+{% block page_head_css %}
+    <link rel="stylesheet"
+          href="{{ url_for('piercing_treatment.static', filename='/css/Piercing_Treatments.css') }}"/>
+{% endblock %}
+
+{% block page_body_main_content %}
+    <div class="row">
+        <h1 class="treatment-head">How to treat your new Piercing ?</h1>
+        <div class="background-text">
+            <div class="Treatment_Text">
+                <ul>
+                    <li>DO NOT TOUCH YOUR PIERCING.<br>
+                        The only time you will touch your piercing is when you are cleaning it, and you will first wash
+                        your
+                        hands.
+                    </li>
+                    <li>DO NOT REMOVE YOUR JEWELRY.<br>
+                        New piercings can shrink the moment jewelry is removed, making it painful or impossible to get
+                        it
+                        back
+                        in.
+                    </li>
+                    <h4>BODY PIERCING AFTERCARE</h4>
+                    <p>USE WARM SEA SALT WATER (SALINE) SOAKS – MORNING AND EVENING<br>
+                        Soaking your piercing with a warm, mild sea salt water solution will not only feel good,
+                        it will also help prevent infection, reduce the risk of scarring, and speed the healing of your
+                        piercing.
+                        Do not touch your piercing without first washing your hands; and leave your jewelry in at all
+                        times!
+                    </p>
+                    <li>Wash your hands thoroughly.</li>
+                    <li>Use the ratios below to create your own saline mixture:
+                        <ol>
+                            <li>1⁄4 teaspoon to 8 ounces of water</li>
+                            <li>1/2 teaspoon to 16 ounces of water</li>
+                            <li>1 teaspoon to 1 quart of water</li>
+                            <li>4 teaspoons to 1 gallon of water</li>
+                        </ol>
+                    </li>
+                    <li>Warm the solution in the microwave, then attempt to completely submerge the piercing in the
+                        solution
+                        for
+                        10 minutes.
+                        If the piercing is in an area that can’t be submerged, you can soak a non-woven gauze and apply
+                        that
+                        to
+                        the piercing,
+                        keeping it saturated for 10 minutes.
+                    </li>
+                    <li>Rinse the area with clean, running water, then pat it dry with a clean paper towel.</li>
+                    <li>If your jewelry is threaded (barbells, etc.) check it to make sure it’s still tight! Remember
+                        “righty
+                        tighty,
+                        lefty loosey.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
+
+

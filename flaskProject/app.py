@@ -50,10 +50,15 @@ from flaskProject.pages.piercing_gallery.piercing_gallery import piercing_galler
 
 app.register_blueprint(piercing_gallery)
 
-## Tattoo Gallery
+## tattoo gallery
 from flaskProject.pages.tattoo_gallery.tattoo_gallery import tattoo_gallery
 
 app.register_blueprint(tattoo_gallery)
+
+## Piercing Gallery2
+from flaskProject.pages.piercing_gallery.piercing_gallery2 import piercing_gallery2
+
+app.register_blueprint(piercing_gallery2)
 
 ## Treatment
 from flaskProject.pages.treatment.treatment import treatment
@@ -74,6 +79,11 @@ app.register_blueprint(piercing_treatment)
 from flaskProject.pages.user_personal_page.personal_page import personal_page
 
 app.register_blueprint(personal_page)
+
+## appointment
+from flaskProject.pages.appointment.appointment import appointment
+
+app.register_blueprint(appointment)
 
 ## Page error handlers
 from flaskProject.pages.page_error_handlers.page_error_handlers import page_error_handlers

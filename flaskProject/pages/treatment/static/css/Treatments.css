@@ -5,15 +5,6 @@
     margin: auto;
 }
 
-body{
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 50px;
-    background-image: url(../../../../static/media/Balg6Fx.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-}
-
 .row :hover{
     font-size: 35px;
 }
@@ -39,7 +30,7 @@ body{
         position: relative;
         margin-top :50px;
         margin-bottom :50px;
-        background: url("../../../homepage/static/media/piercing_treatments_photo.jpg") center;
+        background: url("../media/piercing_treatments_photo.jpg") center;
   }
 
     .main2 a{

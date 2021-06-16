@@ -3,7 +3,7 @@
 {% set page_head_title = 'shop' %}
 
 {% block page_head_css %}
-    <link rel="stylesheet" href="{{ url_for('shop.static', filename='../../shop/static/css/Shop.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('shop.static', filename='/css/Shop.css') }}"/>
 {% endblock %}
 
 {% block page_body_main_content %}
@@ -11,28 +11,28 @@
 <div class="Products">
     <div class="row one">
         <div class="product one">
-            <img class="round" src="../../cart/static/product1.jpeg" width="50%;" height="200;" alt="product1">
+            <img class="round" src="{{ url_for('shop.static', filename='/media/product1.jpeg') }}" width="50%;" height="200;" alt="product1">
             <p id="product1">Belly Piercing<br>19.90$</p>
             <label style="color: white" for="quantity_product1">Quantity :</label>
             <input type="number" id="quantity_product1" name="quantity" min="1" max="20" value="1"> <br><br>
             <input onclick="boldIT('product1')" class="checkbox" type="checkbox">
         </div>
         <div class="product two">
-            <img class="round" src="../../cart/static/product2.jpeg" width="50%;" height="200;" alt="product2">
+            <img class="round" src="{{ url_for('shop.static', filename='/media/product2.jpeg') }}" width="50%;" height="200;" alt="product2">
             <p id="product2">Ears Piercing<br>29.90$</p>
             <label style="color: white" for="quantity_product2">Quantity :</label>
             <input type="number" id="quantity_product2" name="quantity" min="1" max="20" value="1"> <br><br>
             <input onclick="boldIT('product2')" class="checkbox" type="checkbox">
         </div>
         <div class="product three">
-            <img class="round" src="../../cart/static/piercing3.jpg" width="50%;" height="200;" alt="product3">
+            <img class="round" src="{{ url_for('shop.static', filename='/media/piercing3.jpg') }}" width="50%;" height="200;" alt="product3">
             <p id="product3">Lips Piercing<br>19.90$</p>
             <label style="color: white" for="quantity_product3">Quantity :</label>
             <input type="number" id="quantity_product3" name="quantity" min="1" max="20" value="1"> <br><br>
             <input onclick="boldIT('product3')" class="checkbox" type="checkbox">
         </div>
         <div class="product four">
-            <img class="round" src="../../cart/static/piercing4.jpg" width="50%;" height="200;" alt="product4">
+            <img class="round" src="{{ url_for('shop.static', filename='/media/piercing4.jpg') }}" width="50%;" height="200;" alt="product4">
             <p id="product4">Tragos Piercing<br>29.90$</p>
             <label style="color: white" for="quantity_product4">Quantity :</label>
             <input type="number" id="quantity_product4" name="quantity" min="1" max="20" value="1"> <br><br>
@@ -49,6 +49,6 @@
 {% block page_body_footer %}{% endblock %}
 
 {% block page_body_js %}
-    <script src="{{ url_for('shop.static', filename='../../shop/static/js/Shop.js') }}"></script>
+    <script src="{{ url_for('shop.static', filename='/js/Shop.js') }}"></script>
 {% endblock %}
 

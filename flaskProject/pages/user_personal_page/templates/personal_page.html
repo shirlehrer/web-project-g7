@@ -3,7 +3,7 @@
 {% set page_head_title = 'personal_page' %}
 
 {% block page_head_css %}
-    <link rel="stylesheet" href="{{ url_for('personal_page.static', filename='../../user_personal_page/static/css/personal_page.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('personal_page.static', filename='/css/personal_page.css') }}"/>
 {% endblock %}
 
 {% block page_body_main_content %}
@@ -40,7 +40,7 @@
 
     <div id="Ordersoverlay" onclick="Ordersoff()">
         <div id="Orderstext">No Orders</div>
-        <a href="../../shop/templates/Shop.html">
+        <a href="/shop">
             <div id="NewOrder"> Make A New Order!</div>
         </a>
     </div>
@@ -52,7 +52,7 @@
 {% block page_body_footer %}{% endblock %}
 
 {% block page_body_js %}
-    <script src="{{ url_for('personal_page.static', filename='../../user_personal_page/static/js/personal_page.js') }}"></script>
+    <script src="{{ url_for('personal_page.static', filename='/js/personal_page.js') }}"></script>
 {% endblock %}
 
 

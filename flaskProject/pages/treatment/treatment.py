@@ -7,5 +7,5 @@ treatment = Blueprint('treatment', __name__, static_folder='static', static_url_
 # Routes
 @treatment.route('/treatment')
 def index():
-    return render_template('treatment.html')
+    return render_template('treatments.html')
 
