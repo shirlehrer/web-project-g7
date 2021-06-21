@@ -1,0 +1,6 @@
+INSERT INTO group7.appointments (app_id, full_name, phone, email, date, description) VALUES (1, 'Giffy Lowater', 527689987, 'glowaterr@topsy.com', '2021-08-05', 'a big tattoo all over my back');
+INSERT INTO group7.appointments (app_id, full_name, phone, email, date, description) VALUES (2, 'Cathrine Segrott', 543556410, 'csegrottp@booking.com', '2021-09-05', 'an ear piercing');
+INSERT INTO group7.appointments (app_id, full_name, phone, email, date, description) VALUES (3, 'Rania McTrustie', 549778654, 'rmctrusties@e-recht24.de', '2021-09-09', 'small tattoo on mt hand');
+INSERT INTO group7.appointments (app_id, full_name, phone, email, date, description) VALUES (4, 'Aldon Castiello', 465102236, 'acastiellou@gizmodo.com', '2021-07-05', 'two piercings');
+INSERT INTO group7.appointments (app_id, full_name, phone, email, date, description) VALUES (6, 'Shir Lehrer', 549785654, 'shirlehrer@gmail.com', '2021-08-13', 'schedule for two piercings');
+INSERT INTO group7.appointments (app_id, full_name, phone, email, date, description) VALUES (7, 'Shir Lehrer', 549785654, 'shirlehrer@gmail.com', '2021-10-20', 'one small tattoo');

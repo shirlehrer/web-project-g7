@@ -40,6 +40,11 @@ from flaskProject.pages.sign_up.sign_up import sign_up
 
 app.register_blueprint(sign_up)
 
+## Signin
+from flaskProject.pages.sign_in.sign_in import sign_in
+
+app.register_blueprint(sign_in)
+
 ## Gallery
 from flaskProject.pages.gallery.gallery import gallery
 

@@ -1,8 +1,3 @@
-/*.Tattoo_treatments_page{
-    width:40%;
-    /*margin: auto;
-    text-align: center;
-}*/
 
 .Snake_photo{
     margin-top: 3px;
@@ -22,14 +17,6 @@
     padding: 9%;
     border-radius: 20%;
     font-family: 'Montserrat', sans-serif;
-}
-
-body{
-    margin-bottom: 50px;
-    background-image: url(../../../../static/media/Balg6Fx.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
 }
 
 .treatment-head {

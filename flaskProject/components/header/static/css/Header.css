@@ -1,4 +1,5 @@
 
+
 .Logo {
     display: table;
     height:50px;
@@ -76,8 +77,11 @@
     background-color: lightblue;
 }
 
-header{
-    color: white;
+.form-popup{
+    background-color: #555555;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    border-color: white;
 }
 
 .Cart{

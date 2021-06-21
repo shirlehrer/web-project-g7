@@ -8,45 +8,95 @@
 
 {% block page_body_main_content %}
 
-<div class="Users_Personal_page">
-    <div id="Appoverlay" onclick="Appoff()">
-        <div id="Apptext"> No Appointments</div>
-        <a onclick="openAppointment()">
-            <div id="NewAppointment"> Make A New Appointment!</div>
-        </a>
-    </div>
-    <div class="app">
-        <button type="button" onclick="Appon()" class="Appblock">My Appointments</button>
-    </div>
-    <div class="form-popup" id="myAppointment">
-        <form class="form-container">
-            <h2>Schedule an appointment</h2>
-            <label for="name" id="name"><b>Full Name</b></label>
-            <br>
-            <input type="text" placeholder="Enter Your name" name="name" required>
-            <br>
-            <label for="phone" id="phone"><b>Phone</b></label>
-            <br>
-            <input type="tel" placeholder="Enter Your Phone" name="phone" required>
-            <br>
-            <label for="email" id="email"><b>Email</b></label>
-            <br>
-            <input type="email" placeholder="Enter Your Email" name="email" required>
-            <button type="submit" class="btn">Send</button>
-            <br>
-            <button class="btn cancel" onclick="closeAppointment()">Close</button>
-        </form>
-    </div>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+                <p style="color: white; margin-left: 20px">{{ message }}</p>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
 
-    <div id="Ordersoverlay" onclick="Ordersoff()">
-        <div id="Orderstext">No Orders</div>
-        <a href="/shop">
-            <div id="NewOrder"> Make A New Order!</div>
-        </a>
+
+    <section style="color: white">
+        <section>
+            <h4 class="half">User's Info</h4><br>
+            <div class="info">
+                <label class="usersDetails">User name</label> {{ session.get('user_name') }}<br><br>
+                <label class="usersDetails">Full
+                    name</label> {{ session.get('first_name') }} {{ session.get('last_name') }}<br><br>
+                <label class="usersDetails">Email</label> {{ session.get('email') }} <br><br>
+                <br><br>
+                <button onclick="editing()" class="press">Edit your personal info</button>
+                <br><br>
+            </div>
+
+        </section>
+    </section>
+
+    <section id="editD" style="color: white; padding-left: 42%">
+        <form id="edit" method="post" action="/update_details" onsubmit="save()">
+            <label class="edit" for="user_name">User name:</label>
+            <input type="text" id="user_name" name="user_name" required><br><br>
+            <label class="edit" for="first_name">First name:</label>
+            <input type="text" id="first_name" name="first_name" required><br><br>
+            <label class="edit" for="last_name">Last name:</label>
+            <input type="text" id="last_name" name="last_name" required><br><br>
+            <label class="edit" for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <button class="press" type="submit">Save</button>
+        </form>
+        </form>
+    </section>
+
+
+    <div class="Users_Personal_page">
+        <div id="Appoverlay" onclick="Appoff()">
+            <div id="Apptext">Your appointments:<br><br>
+                {% if Amassage %}
+                    <p>No appointments yet</p>
+                {% else %}
+                    <a href="/personal_page">
+                        {% if logged %}
+                            {% for a in apps %}
+                                <ul>
+                                    <li style="color: white"> {{ a.date }}, {{ a.description }}</li>
+                                </ul>
+                            {% endfor %}
+                        {% endif %}
+                    </a>
+                {% endif %}
+            </div>
+            <a onclick="openAppointment()">
+                <div id="NewAppointment"><a href="/appointment" style="color: white">Make A New Appointment!</a></div>
+            </a>
+        </div>
+        <div class="app">
+            <button type="button" onclick="Appon()" class="Appblock">My Appointments</button>
+        </div>
+
+        <div id="Ordersoverlay" onclick="Ordersoff()">
+            <div id="Orderstext">Your last orders:
+                {% if Omassage %}
+                    <p>No orders yet</p>
+                {% else %}
+                    <a href="/personal_page">
+                        {% if logged %}
+                            {% for o in order %}
+                                <ul>
+                                    <li style="color: white"> {{ o.order_id }}, {{ o.p_name }}, {{ o.quantity }}</li>
+                                </ul>
+                            {% endfor %}
+                        {% endif %}
+                    </a>
+                {% endif %}
+            </div>
+            <a href="/shop">
+                <div id="NewOrder"> Make A New Order!</div>
+            </a>
+        </div>
+        <button type="button" onclick="Orderson()" class="Ordersblock">My Orders
+        </button>
     </div>
-    <button type="button" onclick="Orderson()" class="Ordersblock">My Orders
-    </button>
-</div>
 {% endblock %}
 
 {% block page_body_footer %}{% endblock %}

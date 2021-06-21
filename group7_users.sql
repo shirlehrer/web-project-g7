@@ -1,0 +1,15 @@
+INSERT INTO group7.users (first_name, last_name, user_name, email, password) VALUES ('Brant', 'Watchorn', 'brantt', 'bwatchorn2q@cdc.gov', 'g1tr61');
+INSERT INTO group7.users (first_name, last_name, user_name, email, password) VALUES ('Elsinore', 'Bickerton', 'els635', 'ebickerton2m@foxnews.com', 't6w4t1');
+INSERT INTO group7.users (first_name, last_name, user_name, email, password) VALUES ('roger', 'michal', 'mic', 'george.bluth@reqres.in', '456');
+INSERT INTO group7.users (first_name, last_name, user_name, email, password) VALUES ('Ginnifer', 'Herche', 'Gen123', 'gherche2r@163.com', '156311');
+INSERT INTO group7.users (first_name, last_name, user_name, email, password) VALUES ('Joelle', 'Ponton', 'jolllenne', 'jponton2p@hp.com', '456h1dfrt');
+INSERT INTO group7.users (first_name, last_name, user_name, email, password) VALUES ('Joanna', 'Salasar', 'joannnaa', 'jsalasar2o@accuweather.com', 'g4t65');
+INSERT INTO group7.users (first_name, last_name, user_name, email, password) VALUES ('Kelcy', 'Burress', 'kel79', 'kburress2l@nationalgeographic.com', '4fr6');
+INSERT INTO group7.users (first_name, last_name, user_name, email, password) VALUES ('chir', 'lehrer', 'chir', 'leh@post.bgu.ac.il', '951');
+INSERT INTO group7.users (first_name, last_name, user_name, email, password) VALUES ('Michele', 'Poupard', 'michel123', 'mpoupard2n@ox.ac.uk', 'gtr654');
+INSERT INTO group7.users (first_name, last_name, user_name, email, password) VALUES ('omer', 'mamou', 'omri', 'omri@moonshot.co.il', '789');
+INSERT INTO group7.users (first_name, last_name, user_name, email, password) VALUES ('omer', 'mamo', 'mamou', 'omriii@moonshot.co.il', '456');
+INSERT INTO group7.users (first_name, last_name, user_name, email, password) VALUES ('Shai', 'Diamant', 'chai', 'shaiD@reqres.in', '789');
+INSERT INTO group7.users (first_name, last_name, user_name, email, password) VALUES ('Shir', 'lehrer', 'shirl', 'shirleh@post.bgu.ac.il', '456');
+INSERT INTO group7.users (first_name, last_name, user_name, email, password) VALUES ('Shir', 'Lehrer', 'shirleh', 'shirlehrer@gmail.com', '789');
+INSERT INTO group7.users (first_name, last_name, user_name, email, password) VALUES ('vered', 'arbel', 'arb', 'veredarbel@gmail.com', '456');

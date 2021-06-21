@@ -1,4 +1,4 @@
-from settings import DB
+from flaskProject.settings import DB
 import mysql.connector
 
 

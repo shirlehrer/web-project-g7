@@ -4,57 +4,48 @@
 
 
 {% block page_head_css %}
-        <link rel="stylesheet" href="{{ url_for('appointment.static', filename='../../appointment/static/appointment.css') }}"/>
-        <link rel="stylesheet" href="{{ url_for('homepage.static', filename='css/homepage.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('homepage.static', filename='css/homepage.css') }}"/>
 {% endblock %}
 
 {% block page_body_main_content %}
 
+
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+                <p style="color: white; margin-left: 20px">{{ message }}</p>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
     <div class="homepage_Main">
         <div class="opt1">
-            <video src="{{ url_for('homepage.static', filename='/media/video.mp4') }}" width="100%;" loop autoplay muted>
+            <video src="{{ url_for('homepage.static', filename='/media/video.mp4') }}" width="100%;" loop autoplay
+                   muted>
                 <source src="movie.mp4" type="video/mp4">
             </video>
         </div>
         <div class="opt2">
-            <img src="{{ url_for('homepage.static', filename='/media/appointment.jpg') }}" alt="appointment" width="100%;" height="400px;">
-            <div class="appointment_text" onclick="openAppointment()">Schedule an appointment</div>
-            <div class="form-popup" id="myAppointment">
-                <form class="form-container">
-                    <h2>Schedule an appointment</h2>
-                    <label for="name"><b>Full Name</b></label>
-                    <br>
-                    <input type="text" placeholder="Enter Your name" name="name" required>
-                    <br>
-                    <label for="phone" id="phone"><b>Phone</b></label>
-                    <br>
-                    <input type="tel" placeholder="Enter Your Phone" name="phone" required>
-                    <br>
-                    <label for="email"><b>Email</b></label>
-                    <br>
-                    <input type="email" placeholder="Enter Your Email" name="email" required>
-                    <button type="submit" class="btn">Send</button>
-                    <br>
-                    <button class="btn cancel" onclick="closeAppointment()">Close</button>
-                </form>
-            </div>
+            <img src="{{ url_for('homepage.static', filename='/media/appointment.jpg') }}" alt="appointment"
+                 width="100%;" height="400px;">
+            <a style="color: white" class="shop_text" href='/appointment'>Schedule an appointment</a>
         </div>
         <div class="opt3">
             <img src="{{ url_for('homepage.static', filename='/media/shop.jpg') }}" width="100%;" height="400px;">
-            <a href="Shop" class="shop_text">Shop</a>
+            <a style="color: white" href="Shop" class="shop_text">Shop</a>
         </div>
         <div class="opt4">
             <div class="P_Gallery">
                 <img src="{{ url_for('homepage.static', filename='/media/piercing_gallery.jpg') }}" width="100%;"
                      height="400px;">
-                <a href="/piercing_gallery" class="P_Gallery_text">Piercing
+                <a style="color: white" href="/piercing_gallery" class="P_Gallery_text">Piercing
                     Gallery</a>
             </div>
             <div class="Gap_Gallery"></div>
             <div class="T_Gallery">
                 <img src="{{ url_for('homepage.static', filename='/media/tattoo_gallery.jpg') }}" width="100%;"
                      height="400px;">
-                <a href="/tattoo_gallery" class="T_Gallery_text">Tattoo
+                <a style="color: white" href="/tattoo_gallery" class="T_Gallery_text">Tattoo
                     Gallery</a>
             </div>
         </div>

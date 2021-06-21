@@ -1,4 +1,5 @@
-from flask import Blueprint, render_template, redirect, url_for
+from flask import Blueprint, render_template, redirect, url_for, request
+from flaskProject.utilities.db.contact_queries import ContactManager
 
 # homepage blueprint definition
 homepage = Blueprint('homepage', __name__, static_folder='static', static_url_path='/homepage', template_folder='templates')
@@ -14,3 +15,5 @@ def index():
 @homepage.route('/home')
 def redirect_homepage():
     return redirect(url_for('homepage.index'))
+
+

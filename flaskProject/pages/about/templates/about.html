@@ -3,21 +3,21 @@
 {% set page_head_title = 'About' %}
 
 {% block page_head_css %}
-    <link rel="stylesheet" href="{{ url_for('about.static', filename='../../about/static/css/about.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('about.static', filename='/css/about.css') }}"/>
 {% endblock %}
 
 {% block page_body_main_content %}
 
 <div class="About">
     <div class="opt2">
-        <img src="../../../flaskProject/pages/about/static/media/aboutPIc.jpg" width="40%;">
+        <img src="{{ url_for('about.static', filename='media/aboutPIc.jpg') }}" width="40%;">
         <p style="font-size:2vw" class="about_text">We are the illustrators.
                 A tattoo is a mark of experience and personal philosophy.<br>
                 We specialise in: Tattooing, Piercing.</p>
     </div>
     <div class="OpenHours">
         <div class="opt3">
-            <img src="../../../flaskProject/pages/about/static/media/schedP.jpg" width="40%;">
+            <img src="{{ url_for('about.static', filename='/media/schedP.jpg') }}" width="40%;">
             <div style="font-size:2vw" class="sched_text">Opening Hours :
                 Sunday - Thursday 09:00-16:00<br>
                 Fridays and Holiday eves 09:00-13:00
@@ -26,7 +26,7 @@
     </div>
     <div class="information">
         <div class="opt4">
-            <img src="../../../flaskProject/pages/about/static/media/telePic.jpg" width="40%;">
+            <img src="{{ url_for('about.static', filename='/media/telePic.jpg') }}" width="40%;">
             <div class="contactInfo_text" style="font-size:2vw">tel : 0544718891
                 Address :
                 Neve Hamzizim 99
@@ -49,10 +49,3 @@
 </div>
 {% endblock %}
 
-
-
-{% block page_body_footer %}{% endblock %}
-
-{% block page_body_js %}
-    <script src="{{ url_for('about.static', filename='js/about.js') }}"></script>
-{% endblock %}

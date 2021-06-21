@@ -1,4 +1,97 @@
-{box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+    margin: 0
+}
+
+main {
+    padding: 70px 0;
+}
+
+
+.head {
+    font-family: 'New Tegomin', serif;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+.input-info, select {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid grey;
+    border-radius: 4px;
+    box-sizing: border-box;
+    position: absolute;
+    right: 20%;
+
+}
+
+select:focus {
+    outline: none;
+}
+
+div .detail {
+    border-radius: 5px;
+    padding: 20px;
+    color: white;
+}
+
+.detail label {
+    position: relative;
+    top: 15px;
+    margin-left: 18%;
+}
+
+.detail {
+    display: inline-block;
+    margin-bottom: 6px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.end {
+    padding-bottom: 40px;
+}
+
+.link-button {
+    text-decoration: none;
+    color: white;
+}
+
+
+.button-submit button {
+    align-content: center;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: lightslategray;
+    color: black;
+    border-radius: 12px;
+    width: 30%;
+    height: 50px;
+    font-size: 30px;
+    margin-left: 35%;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.button-submit button:focus {
+    outline: none;
+}
+
+.button-submit button:hover {
+    cursor: pointer;
+    background-color: lightblue;
+}
+
+
+
+
+
+
 
 /* The popup form - hidden by default */
 .form-popup {

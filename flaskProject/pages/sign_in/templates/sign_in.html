@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% set page_head_title = 'sign_in' %}
+
+{% block page_head_css %}
+    <link rel="stylesheet" href="{{ url_for('sign_up.static', filename='/sign_up.css') }}"/>
+{% endblock %}
+
+{% block page_body_main_content %}
+
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+                <p style="color: white; margin-left: 20px">{{ message }}</p>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+<section class="head">
+    <h2>SIGN IN</h2>
+</section>
+<section>
+    <div>
+        <form method="post" action="/sign_in" class="info">
+            <div class="detail end">
+                <label for="email" id="email">Email</label>
+                <input class="input-info" type="email" name="email" placeholder="email address" required>
+            </div>
+
+            <div class="detail">
+                <label for="password">Password</label>
+                <input class="input-info" type="password" name="password" placeholder="Password" required>
+            </div><br><br>
+
+            <div class="button-submit">
+                <button type="submit">Join us</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+{% endblock %}
+

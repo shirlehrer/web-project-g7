@@ -2,14 +2,25 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 50px;
-    background-image: url(../../../../static/media/Balg6Fx.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
+.half{
+    font-family: 'New Tegomin', serif;
+    color: white;
+    font-size: 60px;
+    text-align: center;
 }
+
+.usersDetails{
+      border-left: white;
+    text-shadow: #333333;
+    text-underline: white;
+  text-underline-style: single;
+}
+
+.info{
+  padding-left: 45%;
+
+}
+
 
 .Users_Personal_page {
   width: 75%;
@@ -17,31 +28,6 @@ body{
   margin: auto;
 }
 
-/*.My_Appointment{
-  float: right;
-    padding: 20px;
-    border: 1px solid black;
-    width: 30%;
-    text-align: center;
-    margin-right: 15%;
-    margin-top: 20px;
-    margin: auto;
-    margin-bottom: 30px;
-    margin-top: 50px;
-}
-
-.My_Orders{
-    float: left;
-    padding: 20px;
-    border: 1px solid black;
-    width: 30%;
-    text-align: center;
-    margin-right: 10%;
-    margin-left: 15%;
-    margin-top: 20px;
-    margin: auto;
-    margin-bottom: 50px;
-}*/
 #Appoverlay {
   position: fixed; /* Sit on top of the page content */
   display: none; /* Hidden by default */

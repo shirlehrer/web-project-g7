@@ -22,6 +22,7 @@
         {# CSS #}
         <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}"/>
         <link rel="stylesheet" href="{{ url_for('static', filename='css/general.css') }}"/>
+        <link rel="stylesheet" href="{{ url_for('appointment.static', filename='/appointment.css') }}"/>
         {% block page_head_css %}{% endblock %}
     {% endblock %}
 </head>
@@ -39,14 +40,14 @@
             {% block page_body_main %}
                     <div>
                         <main class="row-main">
-                            {% with messages = get_flashed_messages() %}
-                                {% if messages %}
-                                    {% for message in messages %}
-                                        <h3 style="color:#ff0000;margin-top:5vmin">{{ message }}</h3>
-                                    {% endfor %}
-                                {% endif %}
-                            {% endwith %}
                             {% block page_body_main_content %}
+                                {% with messages = get_flashed_messages() %}
+                                    {% if messages %}
+                                        {% for message in messages %}
+                                            <p style="color: white; margin-left: 20px">{{ message }}</p>
+                                        {% endfor %}
+                                    {% endif %}
+                                {% endwith %}
                             {% endblock %}
                         </main>
                     </div>

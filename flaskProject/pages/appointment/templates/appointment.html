@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% set page_head_title = 'appointment request' %}
+
+{% block page_head_css %}
+    <link rel="stylesheet" href="{{ url_for('appointment.static', filename='/appointment.css') }}"/>
+{% endblock %}
+
+{% block page_body_main_content %}
+
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+                <p style="color: white; margin-left: 20px">{{ message }}</p>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+<section class="head">
+    <p>Appointments</p>
+</section>
+    <br>
+    <h4 style="color: white; padding-left: 41%">Send us your info and we'll contact you back...</h4>
+<section>
+    <div>
+        <form method="post" action="/appointment" class="info">
+            <div class="detail end">
+                <label for="name">Full Name</label>
+                <input type="text" placeholder="Enter Your name" name="name" required>
+            </div>
+
+            <div class="detail">
+                <label for="phone" id="phone"><b>Phone number</b></label>
+                <input type="tel" placeholder="Enter Your Phone" name="phone" required>
+            </div>
+
+            <div class="detail">
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Enter Your Email" name="email" required>
+            </div>
+
+              <div class="detail">
+                <label for="date"><b>Choose a date (we will try to do our best...)</b> </label>
+                <input type="date" placeholder="Choose a date" name="date" required>
+            </div>
+
+            <div class="detail">
+                <label for="text"><b>Description</b></label>
+                <input type="text" placeholder="What do you want do?" name="description" required>
+            </div>
+
+            <div class="button-submit">
+                <button type="submit">Send</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+{% endblock %}
