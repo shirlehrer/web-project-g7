@@ -17,7 +17,7 @@ def index():
         session['logged_in'] = False
         email = request.form['email']
         password = request.form['password']
-        query = UserManager.getUser(email)
+        query = UserManager.getUserbyEmail(email)
         if len(query[0].user_name) == 0:
             flash('User does not exists, please sign up to our website')
             session['logged_in'] = False

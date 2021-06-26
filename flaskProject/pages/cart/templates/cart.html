@@ -15,53 +15,74 @@
             <h1 class="head">Shopping cart</h1>
         </div>
         <br><br>
-        <table class="my-products">
-            <tr>
-                <th>picture</th>
-                <th>description</th>
-                <th>options</th>
-                <th>total price</th>
-            </tr>
-            <tr>
-                <td><img class="prod-pic" src="{{ url_for('cart.static', filename='/media/belly_piercing.jpg') }}" alt="belly piercing"/></td>
-                <td>Belly-button piercing
-                </td>
-                <td>
+        {% if session['logged_in']==True %}
+            {% if Cartmassage == False %}
+                <table class="my-products">
+                    <tr>
+                        <th style="font-size:20px; color: white"> Product name </th>
+                        <th style="font-size:20px; color: white"> Product quantity </th>
+                        <th style="font-size:20px; color: white"> Product Price </th>
+                        <th style="font-size:20px; color: white"> Total price </th>
+                        <th></th>
+                    </tr>
+                    {% for c in cart_products %}
+                    <tr>
+                        <th style="color: white"> {{ c.p_name }} </th>
+                        <th style="color: white"> {{ c.quantity }} </th>
+                        <th style="color: white"> {{ c.price }}$ </th>
+                        <th style="color: white"> {{ c.quantity*c.price }}$ </th>
+                        <th> <a href="/deleteProduct/{{ c.p_name }}/{{ session['user_name'] }}"><img style="cursor:pointer;" height="15px" width="15px" src="{{ url_for('static', filename='/media/delete_pic.jpg') }}"></a> </th>
+                    </tr>
+                    {% endfor %}
+                    </table>
+            </div>
+            </div>
+            <div class="button-submit">
+                <button onclick="openPayment()" type="submit">Go to payment</button>
+            </div>
+    <div class="form-popup" id="myPayment">
+            <form method="post" action="/cart/addOrder/{{ session['user_name'] }}" class="form-container">
+                <h2>Payment page</h2>
+                <label for="cc" id="cc"><b>Credit Card</b></label>
+                <br>
+                <input type="number" placeholder="Enter Your Credit Card" name="cc" required>
+                <br>
 
-                    <form class="options" action="">
-                        <label for="quantity">Quantity</label>
-                        <input type="number" id="quantity" name="quantity" min="1" max="20" value="1">
-                    </form>
+                <label for="cvv" id="cvv"><b>CVV</b></label>
+                <br>
+                <input type="number" placeholder="Enter Your CVV" name="cvv" required>
+                <br>
 
-                <td>
-                    <span class="total-price"> ₪200 </span>
-                    <button class="del-btn"><img class="del" src="{{ url_for('cart.static', filename='/media/delete_pic.jpg') }}" alt="delete"/></button>
-                </td>
-            </tr>
-            <tr>
-                <td><img class="prod-pic" src="{{ url_for('cart.static', filename='/media/ear_piercing.jpg') }}" alt="צמד עגילים אינדיאנים"/></td>
-                <td>
-                    Indian earings
-                </td>
-                <td>
-
-                    <form class="options" action="">
-                        <label class="checki" for="quantity5">Quantity </label>
-                        <input type="number" id="quantity5" name="quantity" min="1" max="20" value="1">
-                    </form>
-
-                </td>
-                <td>
-                    <span class="total-price"> ₪200 </span>
-                    <button class="del-btn"><img class="del" src="{{ url_for('cart.static', filename='/media/delete_pic.jpg') }}" alt="delete"/></button>
-                </td>
-        </table>
+                <button type="submit" class="btn">Finish Order</button>
+                <br>
+                <button class="btn cancel" onclick="closePayment()">Close Payment</button>
+            </form>
     </div>
-    <div class="button-submit">
-        <button type="submit">Go to payment</button>
-    </div>
+        {% else %}
+            <div>
+            <p style="text-align: center; color: white; font-size: 20px;">Your cart is empty</p>
+            </div>
+        {% endif %}
+        {% endif %}
 </main>
+
+        <script>
+    function openPayment() {
+        var a = document.getElementById("myPayment").style.display;
+        if ( a != "block" ){
+            document.getElementById("myPayment").style.display = "block";
+        }
+    }
+    function closePayment() {
+    var b = document.getElementById("myPayment").style.display;
+        if ( b != "none" ){
+        document.getElementById("myPayment").style.display = "none";
+        }
+    }
+    </script>
+
 {% endblock %}
+
 
 
 

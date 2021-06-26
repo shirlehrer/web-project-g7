@@ -72,3 +72,17 @@ body{
 .Add_To_Cart:hover{
     background-color: grey;
 }
+
+input[type=submit]{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: underline;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border: none;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    font-weight: bold;
+}

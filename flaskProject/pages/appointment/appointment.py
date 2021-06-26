@@ -14,13 +14,9 @@ def index():
         phone = request.form['phone']
         email = request.form['email']
         date = request.form['date']
-        massage = request.form['description']
-        ContactManager.addAppointment(full_name, phone, email, date, massage)
+        description = request.form['description']
+        ContactManager.addAppointment(full_name, phone, email, description, date)
         #complete_comment = True
         flash('Tnx for contacting us we will contact you back as soon as possible')
         return redirect(url_for('homepage.index'))
     return render_template('appointment.html')
-
-
-
-

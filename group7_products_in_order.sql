@@ -1,8 +1,11 @@
-INSERT INTO group7.products_in_order (p_name, order_id, quantity) VALUES ('drop', 1, 2);
-INSERT INTO group7.products_in_order (p_name, order_id, quantity) VALUES ('clover', 2, 1);
-INSERT INTO group7.products_in_order (p_name, order_id, quantity) VALUES ('double labret', 3, 1);
-INSERT INTO group7.products_in_order (p_name, order_id, quantity) VALUES ('ark', 4, 1);
-INSERT INTO group7.products_in_order (p_name, order_id, quantity) VALUES ('leaf', 4, 2);
-INSERT INTO group7.products_in_order (p_name, order_id, quantity) VALUES ('jewelled dots', 5, 3);
-INSERT INTO group7.products_in_order (p_name, order_id, quantity) VALUES ('clear', 6, 2);
-INSERT INTO group7.products_in_order (p_name, order_id, quantity) VALUES ('jewelled dots', 7, 1);
+create table group7.products_in_order
+(
+    p_name   varchar(50)   not null,
+    order_id int           not null,
+    quantity int default 1 not null,
+    price int 			 not null,
+    constraint products_in_order_orders_order_id_fk
+        foreign key (order_id) references group7.orders (order_id),
+    constraint products_in_order_products_p_name_fk
+        foreign key (p_name) references group7.products (p_name)
+);

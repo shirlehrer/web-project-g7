@@ -4,6 +4,9 @@
     margin: 0;
 
 }
+.row-main {
+    padding: 0px !important;
+}
 
 .head {
     font-family: 'New Tegomin', serif;
@@ -12,10 +15,6 @@
     text-align: center;
     padding-top: 10px;
     margin-bottom: 10%;
-}
-
-main{
-    padding: 70px 0;
 }
 
 .my-cart .title {
@@ -140,6 +139,13 @@ main{
 
 }
 
+#myPayment{
+    background-color: #555555;
+    margin-left: 10%;
+    margin-bottom: 0;
+    border-color: white;
+}
+
 span.price {
     float: left;
     color: gray;
@@ -172,16 +178,17 @@ p>a:hover{
 }
 .my-button{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    /*background-color: var(--button-main-color,#fdd631);
-    color: var(--main-color-4, black);*/
     border-radius: 12px;
     width: 30%;
     height: 50px;
-    font-size: 30px  ;
-    margin-right: 65%;
+    font-size: 20px  ;
+    align-content: center;
+    text-align: center ;
+    display: block;
     text-decoration: none;
 }
 .my-button:hover{
+    box-shadow: 0 8px 16px 0 rgba(1,5,10,0.2), 0 6px 20px 0 rgba(1,5,10,0.19);
     cursor: pointer;
     /*background-color: var(--button-hover-color,#ddb631);*/
 
@@ -196,27 +203,13 @@ p>a:hover{
     color: white;
 }
 
-
-.button-submit button {
-    align-content: center;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: lightslategray;
-    color: black;
-    border-radius: 12px;
-    width: 30%;
-    height: 40px;
-    font-size: 20px;
-    margin-left: 35%;
-    margin-top: 35px;
-    margin-bottom: 20px;
-    text-decoration: none;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-.button-submit button:focus {
-    outline: none;
-}
-
-.button-submit button:hover {
-    cursor: pointer;
-    background-color: lightblue;
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }

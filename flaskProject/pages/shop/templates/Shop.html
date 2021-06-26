@@ -12,61 +12,77 @@
     <div class="row one">
         <div class="product one">
             <img class="round" src="{{ url_for('shop.static', filename='/media/pro1.jpg') }}" width="50%;" height="200;" alt="product1">
-            <p id="product1">Belly Piercing<br>19.90$</p>
+            <p id="product1">Belly Silver Piercing<br>15$</p>
+            <form method="post" action="/add_product_to_cart/Belly Silver Piercing/{{ session['user_name'] }}" id="product1_form">
             <label style="color: white" for="quantity_product1">Quantity :</label>
-            <input type="number" id="quantity_product1" name="quantity" min="1" max="20" value="1"> <br><br>
-            <input onclick="boldIT('product1')" type="submit" value="add to cart">
+            <input type="number" id="quantity_product1" name="quantity" min="1" max="20" value="1" required> <br><br>
+            <input type="submit" onclick="boldIT('product1')" value="add to cart">
+            </form>
         </div>
         <div class="product two">
             <img class="round" src="{{ url_for('shop.static', filename='/media/pro2.jpg') }}" width="50%;" height="200;" alt="product2">
-            <p id="product2">Ears Piercing<br>29.90$</p>
+            <p id="product2">Ears Flower Piercing<br>29$</p>
+            <form method="post" action="/add_product_to_cart/Ears Flower Piercing/{{ session['user_name'] }}" id="product2_form">
             <label style="color: white" for="quantity_product2">Quantity :</label>
-            <input type="number" id="quantity_product2" name="quantity" min="1" max="20" value="1"> <br><br>
-            <input onclick="boldIT('product2')" type="submit" value="add to cart">
+            <input type="number" id="quantity_product2" name="quantity" min="1" max="20" value="1" required> <br><br>
+            <input type="submit" onclick="boldIT('product2')" value="add to cart">
+            </form>
         </div>
         <div class="product three">
             <img class="round" src="{{ url_for('shop.static', filename='/media/pro3.jpg') }}" width="50%;" height="200;" alt="product3">
-            <p id="product3">Lips Piercing<br>19.90$</p>
+            <p id="product3">Lips Pearls Piercing<br>11$</p>
+            <form method="post" action="/add_product_to_cart/Lips Pearls Piercing/{{ session['user_name'] }}" id="product3_form">
             <label style="color: white" for="quantity_product3">Quantity :</label>
-            <input type="number" id="quantity_product3" name="quantity" min="1" max="20" value="1"> <br><br>
-            <input onclick="boldIT('product3')" type="submit" value="add to cart">
+            <input type="number" id="quantity_product3" name="quantity" min="1" max="20" value="1" required> <br><br>
+            <input type="submit" onclick="boldIT('product3')" value="add to cart">
+            </form>
         </div>
         <div class="product four">
             <img class="round" src="{{ url_for('shop.static', filename='/media/pro4.jpg') }}" width="50%;" height="200;" alt="product4">
-            <p id="product4">Tragos Piercing<br>29.90$</p>
+            <p id="product4">Tragos Heart Piercing<br>25$</p>
+            <form method="post" action="/add_product_to_cart/Tragos Heart Piercing/{{ session['user_name'] }}" id="product4_form">
             <label style="color: white" for="quantity_product4">Quantity :</label>
-            <input type="number" id="quantity_product4" name="quantity" min="1" max="20" value="1"> <br><br>
-            <input onclick="boldIT('product4')" type="submit" value="add to cart">
+            <input type="number" id="quantity_product4" name="quantity" min="1" max="20" value="1" required> <br><br>
+            <input type="submit" onclick="boldIT('product4')" value="add to cart">
+            </form>
         </div>
     </div>
     <div class="row two">
          <div class="product one">
             <img class="round" src="{{ url_for('shop.static', filename='/media/pro5.jpg') }}" width="50%;" height="200;" alt="product1">
-            <p id="product5">Belly Piercing<br>19.90$</p>
-            <label style="color: white" for="quantity_product1">Quantity :</label>
-            <input type="number" id="quantity_product1" name="quantity" min="1" max="20" value="1"> <br><br>
-            <input onclick="boldIT('product1')" type="submit" value="add to cart">
+            <p id="product5">Star Piercing<br>19$</p>
+            <form method="post" action="/add_product_to_cart/Star Piercing/{{ session['user_name'] }}" id="product5_form">
+            <label style="color: white" for="quantity_product5">Quantity :</label>
+            <input type="number" id="quantity_product5" name="quantity" min="1" max="20" value="1" required> <br><br>
+            <input type="submit" onclick="boldIT('product5')" value="add to cart">
+            </form>
         </div>
         <div class="product two">
             <img class="round" src="{{ url_for('shop.static', filename='/media/pro6.jpg') }}" width="50%;" height="200;" alt="product2">
-            <p id="product6">Ears Piercing<br>29.90$</p>
-            <label style="color: white" for="quantity_product2">Quantity :</label>
-            <input type="number" id="quantity_product2" name="quantity" min="1" max="20" value="1"> <br><br>
-            <input onclick="boldIT('product2')" type="submit" value="add to cart">
+            <p id="product6">Black Widow Piercing<br>23$</p>
+            <form method="post" action="/add_product_to_cart/Black Widow Piercing/{{ session['user_name'] }}" id="product6_form">
+            <label style="color: white" for="quantity_product6">Quantity :</label>
+            <input type="number" id="quantity_product6" name="quantity" min="1" max="20" value="1" required> <br><br>
+            <input type="submit" onclick="boldIT('product6')" value="add to cart">
+            </form>
         </div>
         <div class="product three">
             <img class="round" src="{{ url_for('shop.static', filename='/media/pro7.jpg') }}" width="50%;" height="200;" alt="product3">
-            <p id="product7">Lips Piercing<br>19.90$</p>
-            <label style="color: white" for="quantity_product3">Quantity :</label>
-            <input type="number" id="quantity_product3" name="quantity" min="1" max="20" value="1"> <br><br>
-            <input onclick="boldIT('product3')" type="submit" value="add to cart">
+            <p id="product7">Black Heart Piercing<br>19$</p>
+            <form method="post" action="/add_product_to_cart/Black Heart Piercing/{{ session['user_name'] }}" id="product7_form">
+            <label style="color: white" for="quantity_product7">Quantity :</label>
+            <input type="number" id="quantity_product7" name="quantity" min="1" max="20" value="1" required> <br><br>
+            <input type="submit" onclick="boldIT('product7')" value="add to cart">
+            </form>
         </div>
         <div class="product four">
             <img class="round" src="{{ url_for('shop.static', filename='/media/pro8.jpg') }}" width="50%;" height="200;" alt="product4">
-            <p id="product8">Tragos Piercing<br>29.90$</p>
-            <label style="color: white" for="quantity_product4">Quantity :</label>
-            <input type="number" id="quantity_product4" name="quantity" min="1" max="20" value="1"> <br><br>
-            <input onclick="boldIT('product4')" type="submit" value="add to cart">
+            <p id="product8">The Big Diamond Piercing<br>29$</p>
+            <form method="post" action="/add_product_to_cart/The Big Diamond Piercing/{{ session['user_name'] }}" id="product8_form">
+            <label style="color: white" for="quantity_product8">Quantity :</label>
+            <input type="number" id="quantity_product8" name="quantity" min="1" max="20" value="1" required> <br><br>
+            <input type="submit" onclick="boldIT('product8')" value="add to cart">
+            </form>
         </div>
     </div>
 </div>

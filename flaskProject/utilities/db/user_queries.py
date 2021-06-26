@@ -25,12 +25,21 @@ class UserManager:
         return query_result
 
     def getUserEmail(user_name):
-        return dbManager.fetch("SELECT email FROM users WHERE user_name='%s'" % user_name)
+        return dbManager.fetch("SELECT email FROM users WHERE user_name='%s'" % user_name)[0][0]
 
-    def getUsernamePass(email):
-        return dbManager.fetch("SELECT user_name, password FROM users WHERE email='%s'" % email)
+    def getUserName(email):
+        return dbManager.fetch("SELECT user_name FROM users WHERE email='%s'" % email)[0][0]
 
-    def getUser(email):
+    def getUserFirstName(user_name):
+        return dbManager.fetch("SELECT first_name FROM users WHERE user_name='%s'" % user_name)[0][0]
+
+    def getUserLastName(user_name):
+        return dbManager.fetch("SELECT last_name FROM users WHERE user_name='%s'" % user_name)[0][0]
+
+    def getUser(user_name):
+        return dbManager.fetch("SELECT * FROM users WHERE user_name='%s'" % user_name)
+
+    def getUserbyEmail(email):
         return dbManager.fetch("SELECT * FROM users WHERE email='%s'" % email)
 
 
