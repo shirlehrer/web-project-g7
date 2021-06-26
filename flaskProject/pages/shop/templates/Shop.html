@@ -6,6 +6,14 @@
     <link rel="stylesheet" href="{{ url_for('shop.static', filename='/css/Shop.css') }}"/>
 {% endblock %}
 
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+                <p style="color: white; margin-left: 20px">{{ message }}</p>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
 {% block page_body_main_content %}
 <h1 class="Shops_title">SHOP</h1>
 <div class="Products">
