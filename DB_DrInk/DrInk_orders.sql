@@ -1,8 +1,0 @@
-INSERT INTO orders (first_name, last_name, amount, email, phoneNum, CC, CVV, finished) VALUES ('Ginnifer', 'Herche', 200, 'kburress2l@nationalgeographic.com','0527684521','1234567891234567', 069, 0);
-INSERT INTO orders (first_name, last_name, amount, email, phoneNum, CC, CVV, finished) VALUES ('Brant', 'Watchorn', 550, 'ebickerton2m@foxnews.com', '0526452211','1111888811118888', 654, 0);
-INSERT INTO orders (first_name, last_name, amount, email, phoneNum, CC, CVV, finished) VALUES ('Joelle', 'Ponton', 129, 'mpoupard2n@ox.ac.uk', '0543544522','1111222211112222', 052, 0);
-INSERT INTO orders (first_name, last_name, amount, email, phoneNum, CC, CVV, finished) VALUES ('Joelle', 'Ponton', 99, 'jsalasar2o@accuweather.com', '0536667888','9999222288886666', 456, 1);
-INSERT INTO orders (first_name, last_name, amount, email, phoneNum, CC, CVV, finished) VALUES ('Joanna', 'Salasar', 540, 'jponton2p@hp.com', '0529998778','1234456756789514', 963, 1);
-INSERT INTO orders (first_name, last_name, amount, email, phoneNum, CC, CVV, finished) VALUES ('Michele', 'Poupard', 99, 'bwatchorn2q@cdc.gov', '0535664488','1234987445679514', 112, 0);
-INSERT INTO orders (first_name, last_name, amount, email, phoneNum, CC, CVV, finished) VALUES ('Elsinore', 'Bickerton', 130, 'gherche2r@163.com', '054669978','7410852096300147', 789, 0);
-INSERT INTO orders (first_name, last_name, amount, email, phoneNum, CC, CVV, finished) VALUES ('Kelcy', 'Burress', 50, 'hmiskenv@mediafire.com', '0541335421','9874654132108520', 365, 0);

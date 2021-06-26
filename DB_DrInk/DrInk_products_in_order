@@ -1,9 +1,0 @@
-
-INSERT INTO products_in_order (p_name, order_id, quantity) VALUES ('drop', 17, 2);
-INSERT INTO products_in_order (p_name, order_id, quantity) VALUES ('clover', 22, 1);
-INSERT INTO products_in_order (p_name, order_id, quantity) VALUES ('double labret', 23, 1);
-INSERT INTO products_in_order (p_name, order_id, quantity) VALUES ('ark', 24, 1);
-INSERT INTO products_in_order (p_name, order_id, quantity) VALUES ('leaf', 24, 2);
-INSERT INTO products_in_order (p_name, order_id, quantity) VALUES ('jewelled dots', 15, 3);
-INSERT INTO products_in_order (p_name, order_id, quantity) VALUES ('clear', 26, 2);
-INSERT INTO products_in_order (p_name, order_id, quantity) VALUES ('jewelled dots', 27, 1);

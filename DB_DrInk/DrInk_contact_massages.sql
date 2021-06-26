@@ -1,5 +1,0 @@
-INSERT INTO contact_massages (first_name, last_name, email, massage) VALUES ('Kort', 'Valadez', 'kvaladez0@gov.uk', 'Would like schedule an appointment for next friday');
-INSERT INTO contact_massages (first_name, last_name, email, massage) VALUES ('Marketa', 'Tweddell', 'mtweddell1@nbcnews.com', 'Want to change my appointment for tattoo');
-INSERT INTO contact_massages (first_name, last_name, email, massage) VALUES ('Annemarie', 'Benoy', 'abenoy2@cyberchimps.com', 'My new piercing got infected!');
-INSERT INTO contact_massages (first_name, last_name, email, massage) VALUES ('Adrianna', 'White', 'awhite3@parallels.com', 'Would like schedule an appointment for a very big tattoo');
-INSERT INTO contact_massages (first_name, last_name, email, massage) VALUES ('Raven', 'McIlhatton', 'rmcilhatton4@taobao.com', 'When will the Clear piercing be back in stock?');
